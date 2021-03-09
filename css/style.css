@@ -1,0 +1,13 @@
+#graph-container {
+    height: 800px;
+    width: 800px;
+}
+
+ul, li {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+p {
+    margin: 0;
+}
