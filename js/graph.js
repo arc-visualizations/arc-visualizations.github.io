@@ -68,6 +68,7 @@ s = sigma.parsers.json(
       tooltip.style.left = e.data.captor.clientX + 5 + 'px';
       tooltip.style.top = e.data.captor.clientY + 5 + 'px';
       tooltip.style.display = 'block';
+      // show image inside tooltip
     });
 
     s.bind('outNode', function (e) {

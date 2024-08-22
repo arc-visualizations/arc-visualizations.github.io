@@ -1,38 +1,126 @@
-
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-custom.css">
-        <title>ARC Visualizations</title>
-      </head>
-      <body>
-        <div class="container">
-          <br />
-          <h3>ARC Behavioral Data Visualizations</h3>
-          <p>The Abstraction and Reasoning Corpus (ARC) is a challenging program induction dataset that was proposed by Chollet (2019). Here, we report a comprehensive set of results collected from a two-phase behavioral study of humans solving ARC tasks from the training set and from the evaluation set. </p>
-          <hr />
-          <br />
-          <div class="row">
-            <div class="col-4">
-              <h4>About the project</h4>
-              <p>Learn more about the Abstraction and Reasoning Corpus (ARC) behavioral dataset.</p>
-              <a href="about.html" class="btn btn-primary">Go to About</a>
-            </div>
-            <div class="col-4">
-              <h4>Training Set</h4>
-              <p>Explore participant responses to the ARC training tasks.</p>
-              <a href="training.html" class="btn btn-primary">Go to Training Set</a>
-            </div>
-            <div class="col-4">
-              <h4>Evaluation Set</h4>
-              <p>Explore participant responses to the ARC evaluation tasks.</p>
-              <a href="evaluation.html" class="btn btn-primary">Go to Evaluation Set</a>
-            </div>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap-custom.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      #graph-container {
+        height: 500px;
+        width: 500px;
+      }
+      #current_state {
+        height: 200px;
+        width: 100%;
+      }
+    </style>
+    <title>ARC Visualizations</title>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <h3>ARC Behavioral Data Visualizations</h3>
+      <p>
+        The Abstraction and Reasoning Corpus (ARC) is a challenging
+        program induction dataset that was proposed by Chollet (2019).
+        Here, we report a comprehensive set of results collected from
+        a two-phase behavioral study of humans solving ARC tasks from
+        the training set and from the evaluation set.
+      </p>
+      <hr />
+      <br />
+      <div class="row">
+        <div class="col-6">
+          <div id="graph-container"></div>
         </div>
-      </body>
-    </html>
-    
+        <div class="col-4 offset-1">
+          <figure class="figure text-center" style="margin-top: 40%">
+            <img src=img/states/44dfd9605050f159e1f6faaf3f841861.png
+            class="figure-img img-fluid" id="current_state">
+            <figcaption
+              class="figure-caption text-center"
+              id="current_state_caption"
+            >
+              <strong>Current State</strong>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 10%">
+        <div class="col-4">
+          <h4>About the project</h4>
+          <p>
+            Learn more about the Abstraction and Reasoning Corpus
+            (ARC) behavioral dataset.
+          </p>
+          <a
+            href="about.html"
+            class="btn btn-primary"
+            style="margin-top: 5%"
+            >Go to About</a
+          >
+        </div>
+        <div class="col-4">
+          <h4>Training Set</h4>
+          <p>
+            Explore participant responses to the ARC training tasks.
+          </p>
+          <a
+            href="training.html"
+            class="btn btn-primary"
+            style="margin-top: 5%"
+            >Go to Training Set</a
+          >
+        </div>
+        <div class="col-4">
+          <h4>Evaluation Set</h4>
+          <p>
+            Explore participant responses to the ARC evaluation tasks.
+          </p>
+          <a
+            href="evaluation.html"
+            class="btn btn-primary"
+            style="margin-top: 5%"
+            >Go to Evaluation Set</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/sigma.min.js"></script>
+    <script src="js/plugins/sigma.layout.forceAtlas2/worker.js"></script>
+    <script src="js/plugins/sigma.layout.forceAtlas2/supervisor.js"></script>
+    <script src="js/plugins/sigma.parsers.json/sigma.parsers.json.js"></script>
+    <script>
+      var task_name = 'e345f17b';
+    </script>
+    <script src="js/graph.js"></script>
+  </body>
+</html>
