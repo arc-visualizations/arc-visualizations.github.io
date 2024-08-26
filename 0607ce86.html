@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>0607ce86.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="aee291af.html">Previous task</a><br /></li>
-                <li><a href="d492a647.html">Next task</a></li>
+                <li><a href="50a16a69.html">Previous task</a><br /></li>
+                <li><a href="1c02dbbe.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0607ce86_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0607ce86_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0607ce86_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0607ce86_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0607ce86_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0607ce86_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0607ce86_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0607ce86_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,8 +130,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -228,6 +255,30 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 5</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Identify the block that has the most uniform and even pattern make nine blocks matching that one pattern with no loose cubes</p>
+                <p><strong>Final description</strong>: Identify the block that has the most uniform and even pattern make nine blocks matching that one pattern with no loose cubes</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/0607ce86_4b9ff461bcb8a879552b1f91fafae97c_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Make each symmetrical over a center line.</p>
                 <p><strong>Final description</strong>: To make each symmetrical to a center.</p>
               </div>
@@ -260,7 +311,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Each "box" requires 1 orange row, two green and two light blue rows.</p>
                 <p><strong>Final description</strong>: Each "box" requires 1 orange row at the top, then two green rows afterwards. The last two rows must be light blue as well as the center vertical part of the grid.</p>
               </div>
@@ -289,7 +340,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Removed stray colored blocks then identified a common pattern in the examples</p>
                 <p><strong>Final description</strong>: Removed stray colored blocks then identified a common pattern in the examples</p>
               </div>
@@ -313,7 +364,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: You clean up the messiness of the design by making the background all black and then each square clean up that design so everything is uniform.</p>
                 <p><strong>Final description</strong>: You clean up the messiness of the design by making the background all black and then each square clean up that design so everything is uniform.</p>
               </div>
@@ -337,7 +388,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: IT IS VERY DIFFICULT</p>
                 <p><strong>Final description</strong>: IT IS DIFFICULT</p>
               </div>
@@ -370,7 +421,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: To fix all the images to look like what the two in the right column indicate.</p>
                 <p><strong>Final description</strong>: All 9 boxes should look like third one in the top row of the test input with these two changes:
 
@@ -412,7 +463,7 @@ Do that 9 times.</p>
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 12</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create squares where the majority of colors in an area of the square are consistent across the 9 different squares using the most common color.</p>
                 <p><strong>Final description</strong>: Create nine colored square groupings where the colors are from the majority of the colors across the 9 squares and make everything outside those 9 black. </p>
               </div>

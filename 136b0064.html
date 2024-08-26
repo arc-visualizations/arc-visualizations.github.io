@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>136b0064.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="0692e18c.html">Previous task</a><br /></li>
-                <li><a href="8b28cd80.html">Next task</a></li>
+                <li><a href="da515329.html">Previous task</a><br /></li>
+                <li><a href="696d4842.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/136b0064_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/136b0064_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/136b0064_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/136b0064_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/136b0064_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/136b0064_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/136b0064_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/136b0064_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,13 +130,45 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
               <div class="col-12">
                 <h4>Participant 1</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: make a pipe flow using the number and pattern of the input model</p>
+                <p><strong>Final description</strong>: create a pipe design using the patterns of the colors and the order of each in the input</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/136b0064_01b14747ad84d6e0dfa8995f26d9c3c8_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/136b0064_01b14747ad84d6e0dfa8995f26d9c3c8_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/136b0064_01b14747ad84d6e0dfa8995f26d9c3c8_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 2</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Each distinct color pattern on the left corresponds to a certain colored line orientation on the right of the same color</p>
                 <p><strong>Final description</strong>: Each distinct color pattern on the left corresponds to a certain colored line orientation on the right of the same color</p>
               </div>
@@ -132,7 +192,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 2</h4>
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create random pattern based by using the colors starting from top and going down in the column</p>
                 <p><strong>Final description</strong>: create random pattern by following the colors in each column from top to bottom.</p>
               </div>
@@ -165,7 +225,40 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 3</h4>
+                <h4>Participant 4</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: follow the color of the block patterns down and to the right alternating 2-3 blocks</p>
+                <p><strong>Final description</strong>: i was very confused about what the rule is and cannot find a good pattern</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/136b0064_4b9ff461bcb8a879552b1f91fafae97c_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/136b0064_4b9ff461bcb8a879552b1f91fafae97c_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/136b0064_4b9ff461bcb8a879552b1f91fafae97c_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: blue on the left turns into three horizontal on the right, red turns into two horizontal, green into four horizontal, and pink into two vertical.</p>
                 <p><strong>Final description</strong>: Blue on the left turns into three horizontal on the right, red turns into two horizontal, green into four horizontal, and pink into two vertical.</p>
               </div>
@@ -198,7 +291,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Each unique colored "box" has a shape that it translates to essentially. Starting with the grey point you translate each box from top to bottom. Once you reach the bottom you continue with the next column until they're all exhausted. You will end up with a snake like pattern if you do it correctly.</p>
                 <p><strong>Final description</strong>: To find the grid size, simply look to grid to the right of the yellow line. Starting with the grey point, keep moving downward by translating each unique "box" part of the grid. Each has their own translation and as long as you follow the rules for each it will look like a long snake shape at the end. Each "translated" part ether moves horizontally or vertically.</p>
               </div>
@@ -227,7 +320,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I followed the placement of the gray square then changed orientation following the colors on the left hand side of the input. </p>
                 <p><strong>Final description</strong>: I believed you had to follow the color pattern on the left which was associated with a certain orientation and number of blocks then piece it together on the right side.</p>
               </div>
@@ -260,7 +353,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The rule is to make a snake by alternating the colors.</p>
                 <p><strong>Final description</strong>: Make a snake.</p>
               </div>

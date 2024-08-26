@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+                        <style>
+     body, html {
+        height: 100%;
+        margin: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+        <div class="sidebar">
+            <div class="col-5">
               <br />
                 <h3>10fcaaa3.json</h3>
      
@@ -38,14 +66,14 @@
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/10fcaaa3_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/10fcaaa3_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/10fcaaa3_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/10fcaaa3_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/10fcaaa3_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/10fcaaa3_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -86,14 +114,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/10fcaaa3_train_input_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 4</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/10fcaaa3_train_output_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 4</strong></figcaption>
@@ -103,23 +131,22 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/10fcaaa3_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/10fcaaa3_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
                   </figure>
               </div>
             </div>
-          </div>
         </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -135,77 +162,56 @@
         
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_394c0f6ef7f7c5e92194981acbcfbbf2.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 4</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_9dc6de043f491d125c6ca74c1eebeb45.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_69eccdf0efbadb9bde646d0ab0b4df25.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_37f5c76ffde05bd4fce1193a5ac59b3b.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_902c3e2537c2fbf98c9f0a8fb8c0c745.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 5</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_741dc9e58f998617583d15736b6ef9ef.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_330afb5076a1981e1d82ed10e6bca9b3.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_9f7884c9e30c03b2ab30ea709c4426bc.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_e09afe174014615f555417f60864c17f.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_8392303df40953ee656bcfed5cb703ae.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_fc6d02879ef217470d2954f8c3c7af97.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_44dfd9605050f159e1f6faaf3f841861.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
+                <img src=img/errors/10fcaaa3_f18862f0c02ac8e9e6d3d9f24263306b.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_c8403ec1075235214a32d3e351bf434c.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 5</strong></figcaption>
+                <img src=img/errors/10fcaaa3_14366f27bd6de19752f837d6fd0e28a7.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_82fd8c1d22573e66378819fb1a8baae6.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_3e65fc79caeef77effeaedc84643de57.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_f43da6dafcf5464bc31f4d6c4bcf110a.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_c46c361476b06e52f4aad4c4d7ef8b0b.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
@@ -226,14 +232,28 @@
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_fc6d02879ef217470d2954f8c3c7af97.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_b0ba8d8996f0e617599fbef263cf239c.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_c118e00470009bd73cb546ac1da26401.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_3bfd8772fbb1164828403b29a1f82c0c.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_fad5f7948ce470caa06280874f22a31e.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_1c093cf8d18ea6688d31d78ac0b6c765.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
@@ -289,6 +309,13 @@
             
             <div class="col-3">
               <figure class="figure">
+                <img src=img/errors/10fcaaa3_096745c44b6d0d36c71d5fc13f7cec49.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
                 <img src=img/errors/10fcaaa3_f68d9635f6d87184e47e0e2a2325b1ed.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
@@ -296,28 +323,77 @@
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_3e65fc79caeef77effeaedc84643de57.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_615627eda10b117447865168f5bf767a.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_e6bace0a4ec595f05eb53ff58e596ef5.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_5e8d61aca51135672e005d411e46202d.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_49043e90d601fbbf7ddc590109eaa123.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_746d2bcdace70d8fafaeb1d730966adf.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_831dde95252bdf20f970bf55edf36da3.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_659a1510a9649ee15142e28a80946ad0.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_cbb10a3c017b60db6b54724d084092e4.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_726a955fdc375d1ac906ed7744e2f643.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_b3fb88c2dbc2d803dd2b0400cd33b242.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_9d1322b319160be0b89100c0d32bcd67.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_c118e00470009bd73cb546ac1da26401.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_a24adebd67f1e1d1fca39f2f4d144c45.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_3cc5abf2558292338da8372103709e0f.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
@@ -331,6 +407,139 @@
             
             <div class="col-3">
               <figure class="figure">
+                <img src=img/errors/10fcaaa3_ac0c6c55d5fe186315efc3eb01d4c710.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_1ae6fac60c543cca339f4de5eb3aa377.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_5e8d61aca51135672e005d411e46202d.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_82fd8c1d22573e66378819fb1a8baae6.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_e09afe174014615f555417f60864c17f.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_330afb5076a1981e1d82ed10e6bca9b3.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_741dc9e58f998617583d15736b6ef9ef.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_902c3e2537c2fbf98c9f0a8fb8c0c745.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 5</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_9dc6de043f491d125c6ca74c1eebeb45.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_394c0f6ef7f7c5e92194981acbcfbbf2.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 4</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_8392303df40953ee656bcfed5cb703ae.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_44dfd9605050f159e1f6faaf3f841861.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_e6bace0a4ec595f05eb53ff58e596ef5.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_c8403ec1075235214a32d3e351bf434c.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 5</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_3187e42baa1e5e86ed98eb7f15415bca.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_746d2bcdace70d8fafaeb1d730966adf.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_c07c7799936a35c79840ad85ffa3eac0.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_17080909a123b2f9cd24da9c98f6e882.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
+                <img src=img/errors/10fcaaa3_c0b08dbb5a0c1304ab382134d6262247.png class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
+              </figure>
+            </div>
+            
+            <div class="col-3">
+              <figure class="figure">
                 <img src=img/errors/10fcaaa3_af7da6da92f42f4921c7347122381b97.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
@@ -338,14 +547,14 @@
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_49c423e4110959f63914adf3303519b8.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_69eccdf0efbadb9bde646d0ab0b4df25.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_b5a725343ccc209a43157359a493f872.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_e2e88fa634664b8c78957e90af0b0f8f.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
@@ -354,13 +563,6 @@
               <figure class="figure">
                 <img src=img/errors/10fcaaa3_187ae3fd00830d84b2c810bc318d1bab.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 3</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_241798fe27587b82903af91ef57227e6.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
@@ -408,14 +610,7 @@
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_e8d279b35cee46d3da3eb74e9d63a3f4.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_ac0c6c55d5fe186315efc3eb01d4c710.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_241798fe27587b82903af91ef57227e6.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
@@ -429,62 +624,6 @@
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_1ae6fac60c543cca339f4de5eb3aa377.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_c07c7799936a35c79840ad85ffa3eac0.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_9f7884c9e30c03b2ab30ea709c4426bc.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_b0ba8d8996f0e617599fbef263cf239c.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_37f5c76ffde05bd4fce1193a5ac59b3b.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_a24adebd67f1e1d1fca39f2f4d144c45.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_f18862f0c02ac8e9e6d3d9f24263306b.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_14366f27bd6de19752f837d6fd0e28a7.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
                 <img src=img/errors/10fcaaa3_b97ddccf1962e5077b87970d068dbd9f.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
@@ -492,133 +631,21 @@
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_17080909a123b2f9cd24da9c98f6e882.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_49c423e4110959f63914adf3303519b8.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_c0b08dbb5a0c1304ab382134d6262247.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_b5a725343ccc209a43157359a493f872.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>
             
             <div class="col-3">
               <figure class="figure">
-                <img src=img/errors/10fcaaa3_3187e42baa1e5e86ed98eb7f15415bca.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_3cc5abf2558292338da8372103709e0f.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_e2e88fa634664b8c78957e90af0b0f8f.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_c46c361476b06e52f4aad4c4d7ef8b0b.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_831dde95252bdf20f970bf55edf36da3.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_9d1322b319160be0b89100c0d32bcd67.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_615627eda10b117447865168f5bf767a.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_fad5f7948ce470caa06280874f22a31e.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_49043e90d601fbbf7ddc590109eaa123.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_659a1510a9649ee15142e28a80946ad0.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_cbb10a3c017b60db6b54724d084092e4.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_726a955fdc375d1ac906ed7744e2f643.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_b3fb88c2dbc2d803dd2b0400cd33b242.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_1c093cf8d18ea6688d31d78ac0b6c765.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_096745c44b6d0d36c71d5fc13f7cec49.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_f43da6dafcf5464bc31f4d6c4bcf110a.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/10fcaaa3_3bfd8772fbb1164828403b29a1f82c0c.png class="figure-img img-fluid">
+                <img src=img/errors/10fcaaa3_e8d279b35cee46d3da3eb74e9d63a3f4.png class="figure-img img-fluid">
                 <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
               </figure>
             </div>

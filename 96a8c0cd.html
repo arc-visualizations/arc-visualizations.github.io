@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>96a8c0cd.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="73ccf9c2.html">Previous task</a><br /></li>
-                <li><a href="e345f17b.html">Next task</a></li>
+                <li><a href="505fff84.html">Previous task</a><br /></li>
+                <li><a href="bb52a14b.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/96a8c0cd_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/96a8c0cd_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/96a8c0cd_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/96a8c0cd_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/96a8c0cd_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/96a8c0cd_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -86,14 +114,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/96a8c0cd_train_input_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 4</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/96a8c0cd_train_output_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 4</strong></figcaption>
@@ -103,14 +131,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/96a8c0cd_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/96a8c0cd_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -118,8 +146,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -239,6 +266,39 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 5</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Continue the leftmost red square in a line that goes under green blocks and over blue ones. </p>
+                <p><strong>Final description</strong>: Red line, starting from first red square, going under green blocks and over blue ones. After last colored block, red goes straight to the end. </p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/96a8c0cd_5b19fc9f288ef4a1bd22a2cb9db89b97_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/96a8c0cd_5b19fc9f288ef4a1bd22a2cb9db89b97_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/96a8c0cd_5b19fc9f288ef4a1bd22a2cb9db89b97_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Complete the pattern.</p>
                 <p><strong>Final description</strong>: Check and match the pattern in the row.</p>
               </div>
@@ -271,7 +331,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Increase height and make lines </p>
                 <p><strong>Final description</strong>: Very difficult. Extend lines. </p>
               </div>
@@ -304,7 +364,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The red square advances. If it hits a green square it turns right and hugs the last green it touches then keeps going. If it hits a blue square it turns left and hugs the last blue it touches then keeps going.</p>
                 <p><strong>Final description</strong>: The red square advances. If it hits a green square it turns right and hugs the last green it touches then keeps going. If it hits a blue square it turns left and hugs the last blue it touches then keeps going.</p>
               </div>
@@ -328,7 +388,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The orangish color goes in a straight line from left to right. If it hits green then it goes down until it clears the green. If it hits the blue it goes up until it clears the blue.</p>
                 <p><strong>Final description</strong>: The orangish color goes in a straight line from left to right. If it hits green then it goes down until it clears the green. If it hits the blue it goes up until it clears the blue.</p>
               </div>
@@ -352,7 +412,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: start from the red square, paint one square red as you move across the output, going UNDER for the next green shape and OVER for the next blue shape.</p>
                 <p><strong>Final description</strong>: start from the red square, paint one square red as you move across the output, going UNDER for the next green shape and OVER for the next blue shape.</p>
               </div>

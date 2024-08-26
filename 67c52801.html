@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>67c52801.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="1da012fc.html">Previous task</a><br /></li>
-                <li><a href="da2b0fe3.html">Next task</a></li>
+                <li><a href="00dbd492.html">Previous task</a><br /></li>
+                <li><a href="1da012fc.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67c52801_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67c52801_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67c52801_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67c52801_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67c52801_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67c52801_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -86,14 +114,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67c52801_train_input_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 4</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67c52801_train_output_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 4</strong></figcaption>
@@ -103,14 +131,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67c52801_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67c52801_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -118,13 +146,36 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
               <div class="col-12">
                 <h4>Participant 1</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: The colored objects fall into the space the matches the width even if the object needs to rotate in order to fit.</p>
+                <p><strong>Final description</strong>: The colored objects fall into the space the matches the width even if the object needs to rotate in order to fit.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/67c52801_10a301cb307b863eb88559a229b1ad30_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 2</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Fit the shapes above the bottom into the slots on the bottom. Rotating as needed to make sure all spots at the bottom are filled.</p>
                 <p><strong>Final description</strong>: Fit the shapes above the bottom into the slots on the bottom. Rotating as needed to make sure all spots at the bottom are filled.</p>
               </div>
@@ -148,7 +199,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 2</h4>
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Think Tetris where you rotate and put the shapes where they fit in the gray open spaces.</p>
                 <p><strong>Final description</strong>: Think Tetris where you rotate and put the shapes where they fit in the gray open spaces.</p>
               </div>
@@ -172,7 +223,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 3</h4>
+                <h4>Participant 4</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Move all of the colored shapes to perfectly fit the empty spaces where the gray squares are.</p>
                 <p><strong>Final description</strong>: Move all of the colored shapes to perfectly fit the empty spaces where the gray squares are.</p>
               </div>
@@ -196,7 +247,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The colored pattern on the bottom of the grid is kept the same, and then the colored shapes are slotted into the open spaces in the bottom of the grid, rotated if necessary, so that they all fit perfectly.</p>
                 <p><strong>Final description</strong>: The colored pattern on the bottom of the grid is kept the same, and then the colored shapes are slotted into the open spaces in the bottom of the grid, rotated if necessary, so that they all fit perfectly.</p>
               </div>
@@ -220,7 +271,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a grid where the shapes fit into provided spaces.</p>
                 <p><strong>Final description</strong>: Create a grid where the shapes fit into provided spaces.</p>
               </div>
@@ -244,7 +295,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The output grid is the same size as the input grid. The bottom colored boxes stay the same and are transferred over. Then the other colored shapes are fit into the bottom according to their size. Shapes can be rotated to fit.</p>
                 <p><strong>Final description</strong>: The output grid is the same size as the input grid. The bottom colored boxes stay the same and are transferred over. Then the other colored shapes are fit into the bottom according to their size. Shapes can be rotated to fit.</p>
               </div>
@@ -268,7 +319,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create 4 areas of colored blocks: red, pink, blue, and gray</p>
                 <p><strong>Final description</strong>: I turned the colored shapes 90 degrees so that they would fit it the openings of the gray area.</p>
               </div>
@@ -301,7 +352,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Make the falling elements fit into the given terrain by rotating them to fit properly by size, no matter where they started from.</p>
                 <p><strong>Final description</strong>: Make the falling elements fit into the given terrain by rotating them to fit properly by size, no matter where they started from.</p>
               </div>
@@ -325,7 +376,31 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: the shapes above will reorient in order to slot into the gray boxes on the bottom.</p>
+                <p><strong>Final description</strong>: the shapes above will reorient in order to slot into the gray boxes on the bottom.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/67c52801_d231f7557ee47ca095c503834919a5b2_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Again, I used the example outputs to place my tiles in my test output. While the examples aren't the same, I thought moving in the same amount of tiles left or right and up and down.</p>
                 <p><strong>Final description</strong>: My thought process is to use example inputs and outputs to relate to my testing condition. Unfortunately, it is not working out very well.</p>
               </div>
@@ -358,7 +433,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 12</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: rotate each colored shape once, and then place them into the slots at the bottom where they fit the best, tetris style</p>
                 <p><strong>Final description</strong>: rotate each colored shape once, and then place them into the slots at the bottom where they fit the best, tetris style</p>
               </div>
@@ -382,7 +457,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 13</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Rotate the shapes and place them where they belong.</p>
                 <p><strong>Final description</strong>: Rotate the shapes and place them where they belong.</p>
               </div>

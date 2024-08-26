@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>0d87d2a6.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="140c817e.html">Previous task</a><br /></li>
-                <li><a href="7039b2d7.html">Next task</a></li>
+                <li><a href="e633a9e5.html">Previous task</a><br /></li>
+                <li><a href="d2acf2cb.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0d87d2a6_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0d87d2a6_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0d87d2a6_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0d87d2a6_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0d87d2a6_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0d87d2a6_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0d87d2a6_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/0d87d2a6_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,13 +130,45 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
               <div class="col-12">
                 <h4>Participant 1</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: The blue lines are joined but if they go through one of the orange boxes, these ones have to become blue.</p>
+                <p><strong>Final description</strong>: Lines join the blue squares. These lines got through some orange squares or touch them. If this happens, these squares or rectangles have to become blue.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/0d87d2a6_137e8edadc66a0b02889ffbb5813e577_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/0d87d2a6_137e8edadc66a0b02889ffbb5813e577_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/0d87d2a6_137e8edadc66a0b02889ffbb5813e577_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 2</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Connect the blue dots and color any red squares touched to blue.</p>
                 <p><strong>Final description</strong>: Connect the blue dots and color any red squares touched to blue.</p>
               </div>
@@ -132,7 +192,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 2</h4>
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Connect each blue tile with the one directly across from it with blue tiles. If any red shape that is touching a blue tile, fill it in with blue.</p>
                 <p><strong>Final description</strong>: Connect each blue tile with the one directly across from it with blue tiles. If any red shape that is touching a blue tile, fill it in with blue.</p>
               </div>
@@ -156,7 +216,31 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 3</h4>
+                <h4>Participant 4</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: The blue squares connect, turning anything in their path blue</p>
+                <p><strong>Final description</strong>: The blue squares connect, turning anything in their path blue</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/0d87d2a6_379d8ae6174d01ae3bfe5749ff55dfa1_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Drawing intersecting lines where the blue cells start and end, and making all groups of cells that the lines go through completely blue</p>
                 <p><strong>Final description</strong>:  I thought it was making blue lines connecting the blue cells, then changing the colors of all of the groups of cells the lines went through from red to blue. </p>
               </div>
@@ -189,7 +273,40 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 6</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Extend the blue square straight across to the other blue square and fill in any red block it touches into blue.</p>
+                <p><strong>Final description</strong>: Connect the blue squares in a straight line and fill any red blocks it touches into blue.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/0d87d2a6_5e8f778183e6397fbe51b796d4b344a0_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/0d87d2a6_5e8f778183e6397fbe51b796d4b344a0_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/0d87d2a6_5e8f778183e6397fbe51b796d4b344a0_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Two blue squares across from each other form a line, turning blue any red blocks the line goes through. </p>
                 <p><strong>Final description</strong>: Two blue squares across from each other will form a line, turning blue any red block the line goes across, in addition to any other red block within one-block of the line. </p>
               </div>
@@ -218,7 +335,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: To create on the grid a line that connects the solid blue using squares already there then to add a block of 5 squares by four squares to it.</p>
                 <p><strong>Final description</strong>: Connect blue squares in the grid to make a horizontal and vertical line . Add a blue square to the lines that overlaps both.</p>
               </div>
@@ -251,7 +368,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Connect the blue squares opposite from each other with a line of blue squares. Then convert any red shapes crossed over to blue.</p>
                 <p><strong>Final description</strong>: Connect the blue squares opposite from each other with a line of blue squares. If a line crosses or touches a red shape, convert that shape to blue.</p>
               </div>

@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>d4c90558.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="3979b1a8.html">Previous task</a><br /></li>
+                <li><a href="aa300dc3.html">Previous task</a><br /></li>
                 <li><a href="05a7bcf2.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/d4c90558_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/d4c90558_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/d4c90558_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/d4c90558_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/d4c90558_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/d4c90558_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/d4c90558_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/d4c90558_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,13 +130,36 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
               <div class="col-12">
                 <h4>Participant 1</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: The number of rows equals the number of colored rectangles, and the number of columns equals the largest number of grey squares contained within any one rectangle. Each row is colored left-to-right in the color of each rectangle with the number of colored squares equal to the number of grey squares within that color's rectangle. The colors are also arranged top to bottom in the order of smallest to largest number of how many grey squares they each had.</p>
+                <p><strong>Final description</strong>: The number of rows equals the number of colored rectangles, and the number of columns equals the largest number of grey squares contained within any one rectangle. Each row is colored left-to-right in the color of each rectangle with the number of colored squares equal to the number of grey squares within that color's rectangle. The colors are also arranged top to bottom in the order of smallest to largest number of how many grey squares they each had.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/d4c90558_38e93c1a7e94cb53f6f859b361649def_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 2</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The grey boxes are the number across for a color. </p>
                 <p><strong>Final description</strong>: Each box has colored boxes surrounding it. Inside are grey squares. To output count the number of grey squares in the box and add that many colored squares in a row. The ordering of the grey boxes matters. Input from lowest to highest number grey boxes.</p>
               </div>
@@ -137,7 +188,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 2</h4>
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a 2 by 4 pattern with 3 different colors.Almost two toned identical.</p>
                 <p><strong>Final description</strong>: Create a pattern with 3 by 8 grid.The colors each box is shaded depends on the number of gray boxes in each colored box.You always have to color the boxes in numerical order.</p>
               </div>
@@ -166,7 +217,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 3</h4>
+                <h4>Participant 4</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The columns of the output correspond to the amount of gray spots in each of the shapes within the bigger black shape in the input. The rows of the output correspond to the different shapes from the input.</p>
                 <p><strong>Final description</strong>: The columns of the output correspond to the amount of gray spots in each of the shapes within the bigger black shape in the input. The rows of the output correspond to the different shapes from the input.</p>
               </div>
@@ -190,7 +241,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a checkerboard pattern by setting colors in each row.</p>
                 <p><strong>Final description</strong>: Create a checkerboard pattern by setting colors in each row.</p>
               </div>
@@ -214,7 +265,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Use number of grey squares inside colored box to create horizontal bar graph with colors.</p>
                 <p><strong>Final description</strong>: Use number of grey squares inside colored box to create horizontal bar graph with colors.</p>
               </div>
@@ -238,7 +289,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I created the number of grey squares across the grid that matches the color of the rectangular boarder.</p>
                 <p><strong>Final description</strong>: I created a color coded grid that matched the grey numbers to the color of the boarder.</p>
               </div>
@@ -267,7 +318,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The number of grey squares in each color ordered by size.</p>
                 <p><strong>Final description</strong>: The number of grey squares in each color ordered by size.</p>
               </div>
@@ -291,7 +342,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The number of colors represented the number rows which was 3. The grey dots within each color represented how many columns their were.</p>
                 <p><strong>Final description</strong>: The number of colors represents the number of rows you need. If there are only 3 colors represented, then you will only create 3 rows. The number of dots represents the number of spaces needed in each column. If there are 8 grey dots within the test input then you will create 8 spaces in the column that correspond with that color.</p>
               </div>
@@ -320,7 +371,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Represent the number of grey boxes inside of the colored shape with colored boxes.</p>
                 <p><strong>Final description</strong>: Represent the number of grey boxes inside of the colored shape with colored boxes.</p>
               </div>

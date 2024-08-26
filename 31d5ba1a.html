@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>31d5ba1a.json</h3>
      
@@ -38,14 +66,14 @@
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -86,14 +114,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_train_input_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 4</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_train_output_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 4</strong></figcaption>
@@ -102,14 +130,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_train_input_5.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 5</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_train_output_5.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 5</strong></figcaption>
@@ -119,14 +147,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/31d5ba1a_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -134,8 +162,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -275,6 +302,39 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 5</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: I suppose it's the corresponding black in the input grid and above it but I'm unsure.</p>
+                <p><strong>Final description</strong>: Honestly, I can't figure this one out. I really tried my best but I'm having a lot of trouble finding the correlations.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/31d5ba1a_b3db9a298f8104617b83fd723397f2ab_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/31d5ba1a_b3db9a298f8104617b83fd723397f2ab_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/31d5ba1a_b3db9a298f8104617b83fd723397f2ab_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: It seems the half of the grid with yellow is copied, then yellow is transformed to pink.  A few other changes are made moving around pink tiles.  I know I have this incompletely solved but I'm not sure what else is missing.</p>
                 <p><strong>Final description</strong>: I thought I needed to copy the half of the grid containing yellow tiles, then turn yellow to pink.  I thought maybe I needed to rotate and manipulate the pink tiles, but I wasn't sure what I was supposed to be doing.</p>
               </div>
@@ -307,7 +367,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Scramble to colors in the pattern that follows the rule
 </p>
                 <p><strong>Final description</strong>: I have no idea to be honest</p>
@@ -341,7 +401,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I honest don't know and am guessing.</p>
                 <p><strong>Final description</strong>: I honestly had no idea and was guessing based on the negative space in the test input image.</p>
               </div>
@@ -374,7 +434,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I don't understand, other than reducing to three rows and changing boxes to pink.</p>
                 <p><strong>Final description</strong>: I couldn't figure out what the rule was.</p>
               </div>

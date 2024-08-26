@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>aa300dc3.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="92e50de0.html">Previous task</a><br /></li>
-                <li><a href="bf699163.html">Next task</a></li>
+                <li><a href="8cb8642d.html">Previous task</a><br /></li>
+                <li><a href="d4c90558.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/aa300dc3_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/aa300dc3_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/aa300dc3_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/aa300dc3_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/aa300dc3_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/aa300dc3_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -86,14 +114,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/aa300dc3_train_input_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 4</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/aa300dc3_train_output_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 4</strong></figcaption>
@@ -103,14 +131,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/aa300dc3_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/aa300dc3_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -118,13 +146,36 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
               <div class="col-12">
                 <h4>Participant 1</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Input the black as it was shown in the original, then place blue squares on a diagonal from one corner to the other corner. </p>
+                <p><strong>Final description</strong>: Input the black as it was shown in the original, then place blue squares on a diagonal from one corner to the other corner. </p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/aa300dc3_03bfaef98653a09ed8aa8e08de334120_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 2</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: to use the max number of squares in a diagonal line</p>
                 <p><strong>Final description</strong>: to use the max number of squares in a diagonal line</p>
               </div>
@@ -148,7 +199,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 2</h4>
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Fill in with a diagonal band</p>
                 <p><strong>Final description</strong>: Fill in with a diagonal band</p>
               </div>
@@ -172,7 +223,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 3</h4>
+                <h4>Participant 4</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Insert a light blue diagonal line across the pattern. Decide whether to being the line at the top of bottom by chosing which edge has more mass. Meaning start from the edge with is more squarely shapped.</p>
                 <p><strong>Final description</strong>: Insert a light blue diagonal line across the pattern. Decide whether to being the line at the top of bottom by chosing which edge has more mass. Meaning start from the edge with is more squarely shapped.</p>
               </div>
@@ -196,7 +247,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Draw the longest diagonal line that will fit in the shape.</p>
                 <p><strong>Final description</strong>: Draw the longest diagonal line that will fit in the shape.</p>
               </div>
@@ -220,7 +271,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Find a path where a diagonal line can be drawn from one corner to the opposite corner. This line is colored blue.</p>
                 <p><strong>Final description</strong>: Find a path where a diagonal line can be drawn from one corner to the opposite corner. This line is colored blue.</p>
               </div>
@@ -244,7 +295,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I think the rule is to connect the two longest corners of the black tiles together in a diagonal direction using light blue tiles.</p>
                 <p><strong>Final description</strong>: I think the rule is to connect the two longest corners of the black tiles together in a diagonal direction using light blue tiles.</p>
               </div>
@@ -268,7 +319,31 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: create a diagonal line across the board while staying within the black squares</p>
+                <p><strong>Final description</strong>: create a diagonal line across the board while staying within the black squares</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/aa300dc3_ddbb5541fe47fbe6167f4209a2a5a9ec_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: A diagonal line of light blue should be made from the top left black cell when possible. If it is not possible, make a diagonal line starting from the top right black cell. The line ends when it meets a tray cell.</p>
                 <p><strong>Final description</strong>: A light blue diagonal line in the black cells starts from either the top right or top left black cell. The direction chosen is based on the longer diagonal line that can be created before hitting a gray cell.</p>
               </div>
@@ -301,7 +376,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I thought you were to go from the corner out left/right and then go to the opposite corner with the color blue.</p>
                 <p><strong>Final description</strong>: I was taking the blue color from one corner to the diagonal opposite corner. I had it start near 2 black squares.</p>
               </div>

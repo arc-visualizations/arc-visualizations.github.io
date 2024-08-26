@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>e9ac8c9e.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="e760a62e.html">Previous task</a><br /></li>
-                <li><a href="50aad11f.html">Next task</a></li>
+                <li><a href="b0f4d537.html">Previous task</a><br /></li>
+                <li><a href="1a2e2828.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e9ac8c9e_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e9ac8c9e_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e9ac8c9e_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e9ac8c9e_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e9ac8c9e_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e9ac8c9e_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e9ac8c9e_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e9ac8c9e_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,8 +130,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -190,6 +217,39 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 4</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: I thought the rule was to copy or duplicate the test input into the test output.</p>
+                <p><strong>Final description</strong>: This is very frustrating even though I took time to try and understand the process.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e9ac8c9e_40227e6ec94dc04fc36d4099786fa122_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e9ac8c9e_40227e6ec94dc04fc36d4099786fa122_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e9ac8c9e_40227e6ec94dc04fc36d4099786fa122_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Filling out the quadrants of the square with the corresponding color at the top corner of the quadrant</p>
                 <p><strong>Final description</strong>: Filling out the quadrants of the square with the corresponding color at the top corner of the quadrant</p>
               </div>
@@ -213,7 +273,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The color squares direct you on what color to put proportionally inside the grey blocks.</p>
                 <p><strong>Final description</strong>: The color squares direct you on what color to put proportionally inside the grey blocks.</p>
               </div>
@@ -237,7 +297,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: no grey, use colors in a square to create another square </p>
                 <p><strong>Final description</strong>: black out the grey and create larger color squares </p>
               </div>
@@ -270,7 +330,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The colored squares on the outer corner of the gray square are to represent the corresponding corners to be colored in that color, all corners are to be evenly colored in of each corner.</p>
                 <p><strong>Final description</strong>: The colored squares on the outer corner of the gray square are to represent the corresponding corners to be colored in that color, all corners are to be evenly colored in of each corner.</p>
               </div>
@@ -294,7 +354,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: To fill in the gray squares with separate colors. The colors depended on the color of the square touching each corner of the gray squares.</p>
                 <p><strong>Final description</strong>: To fill in the gray squares with separate colors. The colors depended on the color of the square touching each corner of the gray squares.</p>
               </div>
@@ -318,7 +378,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: trying t ojust copy it the best i could? I don't know</p>
                 <p><strong>Final description</strong>: OK so you just place the colors into the blocks as they are shown from the corners evenly distributing it.</p>
               </div>
@@ -347,7 +407,31 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: move the colors from the corners into the grey squares</p>
+                <p><strong>Final description</strong>: move the colors from the corners into the grey squares</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e9ac8c9e_d7c52f2f24e90fe8b0174a6ff811b868_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 12</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The colors on the outside corners of each square tell you how to fill the square, with each color taking up the same amount of space equally. </p>
                 <p><strong>Final description</strong>: The colors on the outside corners of each square tell you how to fill the square, with each color taking up the same amount of space equally. </p>
               </div>

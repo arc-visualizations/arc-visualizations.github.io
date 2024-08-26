@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>3979b1a8.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="8cb8642d.html">Previous task</a><br /></li>
-                <li><a href="d4c90558.html">Next task</a></li>
+                <li><a href="f45f5ca7.html">Previous task</a><br /></li>
+                <li><a href="692cd3b6.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/3979b1a8_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/3979b1a8_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/3979b1a8_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/3979b1a8_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -71,14 +99,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/3979b1a8_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/3979b1a8_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -86,13 +114,36 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
               <div class="col-12">
                 <h4>Participant 1</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: follow rows of colors as if making concentric circles</p>
+                <p><strong>Final description</strong>: follow rows of colors as if making concentric circles</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/3979b1a8_01b14747ad84d6e0dfa8995f26d9c3c8_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 2</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create the outer border around the inset smaller image.</p>
                 <p><strong>Final description</strong>: Create the outer pattern that matches an expansion of the inner pattern.</p>
               </div>
@@ -121,7 +172,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 2</h4>
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Make a 9 by 9 grid. Copy the test input into the top left corner. Add 5 blocks from the left below the pattern and five blocks on the right side starting from the top in the color of the first block in column and row 1. Do the same thing for the next sets of rows and columns, increasing by one block each time and using the color block from row 3 column 3 for the next set of lines and the color of row 2 column 2 for the set after that. Then the color of row 1, column 1 for the set after that. For the sixth block in row 6 use the color from row 3, column 3, for the 7th block in row 7 use the color from row 2, column 2, for the 8th block in row 8 use the color of row 1 column 1, and for block 9 in row 9 use the color of row 3, column 3.</p>
                 <p><strong>Final description</strong>: Make a 10x10 grid. Copy the test input in the top left corner. Using the pattern in the test input expand the pattern. Starting with the color in the corners for the next part of the pattern and then the center color and work out in repeating rows.The tenth block on row ten should end up being the same color as the color for row 2, column 2.</p>
               </div>
@@ -154,7 +205,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 3</h4>
+                <h4>Participant 4</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Extend the grid until the cross pattern is in the upper left corner. Then continue the border pattern using the alternating colors.</p>
                 <p><strong>Final description</strong>: Extend the grid until the cross pattern is in the upper left corner. Then continue the border pattern using the alternating colors.</p>
               </div>
@@ -178,7 +229,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: double size of grid and put pattern in upper right corner, then alternate colors around the pattern </p>
                 <p><strong>Final description</strong>: double size of grid and put pattern in upper right corner, then alternate colors around the pattern </p>
               </div>
@@ -202,7 +253,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Fill the grid by alternating the three colors.</p>
                 <p><strong>Final description</strong>: Fill the grid by alternating the three colors.</p>
               </div>
@@ -226,7 +277,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Zoom out and continue the pattern, starting in the upper right corner.</p>
                 <p><strong>Final description</strong>: Zoom out and continue the pattern, starting in the upper right corner.</p>
               </div>
@@ -250,7 +301,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a border pattern by alternating between the three colors in the input.</p>
                 <p><strong>Final description</strong>: Create a border pattern by alternating between the three colors in the input.</p>
               </div>

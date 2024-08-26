@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>68b67ca3.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="f83cb3f6.html">Previous task</a><br /></li>
-                <li><a href="3a301edc.html">Next task</a></li>
+                <li><a href="62ab2642.html">Previous task</a><br /></li>
+                <li><a href="903d1b4a.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/68b67ca3_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/68b67ca3_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/68b67ca3_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/68b67ca3_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/68b67ca3_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/68b67ca3_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/68b67ca3_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/68b67ca3_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,8 +130,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -175,6 +202,30 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 3</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Shrink all empty squares, but keep vertical alignment. </p>
+                <p><strong>Final description</strong>: Shrink all empty squares, but keep vertical alignment. </p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/68b67ca3_3c77da5dce8dbede95574782508fe334_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 4</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Condense the test input into a 3x3 board but keep the spatial relations between the colors in the original board. </p>
                 <p><strong>Final description</strong>: Condense the test input into a 3x3 board but keep the spatial relations between the colors in the original board. </p>
               </div>
@@ -198,7 +249,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I copied the sample patterns.</p>
                 <p><strong>Final description</strong>: I copied the sample patterns.</p>
               </div>
@@ -222,7 +273,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Start the upper left corner as the same color. Then add the adjacent colors based on the distance between the colored squares.</p>
                 <p><strong>Final description</strong>: Start with the corner upper left color. Then match the colors based on the distance of the colors and squares condensed in the output examples.</p>
               </div>
@@ -251,7 +302,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The black spaces between colored squares are removed. Colored spaces cannot go into another color's row or column if they're not in the same column or row.</p>
                 <p><strong>Final description</strong>: The black spaces between colored squares are removed. Colored spaces cannot go into another color's row or column if they're not in the same column or row.</p>
               </div>
@@ -275,7 +326,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The rule was to squeeze the squares together. Keep the same shape just squeeze them together since half of the grid was lost.</p>
                 <p><strong>Final description</strong>: The rule was to squeeze the squares together. Keep the same shape just squeeze them together since half of the grid was lost.</p>
               </div>
@@ -299,7 +350,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: To take the test input pattern and reduce it into a 3X3 pattern using the same colors.</p>
                 <p><strong>Final description</strong>: To take the test input pattern and reduce it into a 3X3 pattern using the same colors.</p>
               </div>
@@ -323,7 +374,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: In a 3x3 grid, you put the predominant colors in the smaller grid based on their location.</p>
                 <p><strong>Final description</strong>: In a 3x3 grid, you put the predominant colors in the smaller grid based on their location.</p>
               </div>
@@ -347,7 +398,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The rule is to compress the same colors in the 6x6 grid to the 3x3 grid. But there are no controls in the bottom right, and no way to undo if I do the wrong thing.</p>
                 <p><strong>Final description</strong>: Click 3 high and 3 wide, click apply.
 Click modify one cell at a time, click desired color followed by clicking desired cells to change.
@@ -382,7 +433,7 @@ Click submit.</p>
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 12</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I looked at the different examples. It appeared that if there was one space in between colors in the input, the colors would be next to each other in output. If there was more than one space in the input, there would be one space in between colors in the output.</p>
                 <p><strong>Final description</strong>: I looked at the different examples. It appeared that if there was one space in between colors in the input, the colors would be next to each other in output. If there was more than one space in the input, there would be one space in between colors in the output.</p>
               </div>

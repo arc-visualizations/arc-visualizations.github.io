@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>67636eac.json</h3>
      
@@ -32,20 +60,20 @@
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
                 <li><a href="4f537728.html">Previous task</a><br /></li>
-                <li><a href="575b1a71.html">Next task</a></li>
+                <li><a href="00dbd492.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67636eac_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67636eac_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67636eac_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67636eac_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67636eac_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67636eac_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67636eac_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/67636eac_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,8 +130,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -166,6 +193,30 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 3</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: The color shapes were lined up together and the extra black squares were removed so it was condensed.</p>
+                <p><strong>Final description</strong>: The color shapes were lined up together and the extra black squares were removed so it was condensed.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/67636eac_1c45a8fbf105bdc045d3211c52dfc366_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 4</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The colored shapes will be pushed together vertically or horizontally depending on how they were positioned</p>
                 <p><strong>Final description</strong>: The colored shapes will be pushed together vertically or horizontally depending on how they were positioned</p>
               </div>
@@ -189,7 +240,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The shapes are to be presented either horizonal or vertical depending on their relation.</p>
                 <p><strong>Final description</strong>: The shapes are to be presented either horizonal or vertical depending on their relation.</p>
               </div>
@@ -213,7 +264,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Narrow the field view to the colorful objects. Align them side by side if the flow of objects is horizontal or top to bottom if the flow is vertical. Leave no space between the objects. </p>
                 <p><strong>Final description</strong>: Narrow the field view to the colorful objects. Align them side by side if the flow of objects is horizontal or top to bottom if the flow is vertical. Leave no space between the objects. </p>
               </div>
@@ -237,7 +288,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Only the colored tile shapes get to the output and they go next to each other, either horizontally or vertically.</p>
                 <p><strong>Final description</strong>: Only the colored tile shapes get to the output and they go next to each other, either horizontally or vertically.</p>
               </div>
@@ -261,7 +312,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a pattern by placing the colored H's next to each other.</p>
                 <p><strong>Final description</strong>: Create a pattern by placing the colored H's next to each other.</p>
               </div>
@@ -285,7 +336,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Make the same layout, but condense everything into a row.</p>
                 <p><strong>Final description</strong>: Make the same layout, but condense everything into a row.</p>
               </div>
@@ -309,7 +360,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Remove all black space, collapsing the colored shapes together, maintaining vertical or horizontal order.</p>
                 <p><strong>Final description</strong>: Remove all black space, collapsing the colored shapes together, maintaining vertical or horizontal order.</p>
               </div>
@@ -333,7 +384,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Created the output by lining up H style formations side by side.</p>
                 <p><strong>Final description</strong>: Created the output by lining up H style formations side by side.</p>
               </div>
@@ -357,7 +408,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 12</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: it was like example 1</p>
                 <p><strong>Final description</strong>: it was like example 1</p>
               </div>
@@ -381,7 +432,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 12</h4>
+                <h4>Participant 13</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Place the shapes in a connected line that follows the input direction of it being either left to right (horizontally) or top to bottom (vertically). </p>
                 <p><strong>Final description</strong>: Place the shapes in a connected line that follows the input direction of it being either left to right (horizontally) or top to bottom (vertically). </p>
               </div>

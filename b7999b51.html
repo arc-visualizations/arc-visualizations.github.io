@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>b7999b51.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="f5aa3634.html">Previous task</a><br /></li>
-                <li><a href="1c02dbbe.html">Next task</a></li>
+                <li><a href="8fbca751.html">Previous task</a><br /></li>
+                <li><a href="3490cc26.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/b7999b51_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/b7999b51_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/b7999b51_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/b7999b51_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/b7999b51_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/b7999b51_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/b7999b51_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/b7999b51_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,8 +130,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -277,6 +304,39 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 7</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Output the colors used by how many columns each color has and order them in descending order left to right.</p>
+                <p><strong>Final description</strong>: I thought it was Outputting the colors based on how many columns the colors had and ranking them in descending order. I was unsure if green should be 3, 4, or 5 based on how it handled some of the green as they were into different blocks. It possibly coud have been just going by blocks of color rather than the colors themselves. I messed up my first attempt as I completely forgot to include red/.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/b7999b51_660b445e45743db8a2098a4f8462f4a6_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/b7999b51_660b445e45743db8a2098a4f8462f4a6_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/b7999b51_660b445e45743db8a2098a4f8462f4a6_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Followed rules</p>
                 <p><strong>Final description</strong>: Followed instructions</p>
               </div>
@@ -309,7 +369,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: to go biggest from smallest color portions</p>
                 <p><strong>Final description</strong>: no clue what is going on i tried to line up based on heights as shown in example</p>
               </div>
@@ -342,7 +402,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Make a grid as wide as you have colors and then starting from most to least, color in as many tall as the object that matches the color. </p>
                 <p><strong>Final description</strong>: Make a grid as wide as you have colors and then starting from most to least, color in as many tall as the object that matches the color. </p>
               </div>
@@ -366,7 +426,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: This is counting the number of rows per color.  Make the height of the output = max rows of any one color, columns = number of colors.  Simply color code each column from most to least number of rows in input.</p>
                 <p><strong>Final description</strong>: This is looking at number of rows per color.  Output height = max number of rows of any one color for input, width = number of colors.  Arrange columns based on number of rows per color from most to least.</p>
               </div>
@@ -395,7 +455,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 12</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The most to the least color blocks in order.</p>
                 <p><strong>Final description</strong>: The most to the least block hieight.</p>
               </div>
@@ -428,7 +488,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 12</h4>
+                <h4>Participant 13</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Use the height of the blocks, per color, to make the blocks in the output only</p>
                 <p><strong>Final description</strong>: Use the height of each color group of blocks to determine the single line height of the blocks in the output.</p>
               </div>
@@ -457,7 +517,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 13</h4>
+                <h4>Participant 14</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: It's basically a graph of the amounts of colors and how many blocks they contain in the overall input.</p>
                 <p><strong>Final description</strong>: It's a graph that shows the number of blocks pertaining to the top number in the input from highest to lowest while still accounting for overlap.</p>
               </div>
@@ -486,7 +546,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 14</h4>
+                <h4>Participant 15</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Change the grid to have the height of the largest height of colored boxes and a width equal to the total number of individual colors.  Each row matches the height of each original block of colors starting with the highest colored block on the left going from top to bottom then moving right in descending order of height. </p>
                 <p><strong>Final description</strong>: Change the grid to have the height of the largest height of colored boxes and a width equal to the total number of individual colors.  Each row matches the height of each original block of colors starting with the highest colored block on the left going from top to bottom then moving right in descending order of height. </p>
               </div>

@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>5b526a93.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="0a1d4ef5.html">Previous task</a><br /></li>
-                <li><a href="81c0276b.html">Next task</a></li>
+                <li><a href="b15fca0b.html">Previous task</a><br /></li>
+                <li><a href="ca8f78db.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/5b526a93_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/5b526a93_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/5b526a93_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/5b526a93_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -71,14 +99,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/5b526a93_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/5b526a93_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -86,13 +114,36 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
               <div class="col-12">
                 <h4>Participant 1</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: fill in light color patterns using same pattern as dark colors</p>
+                <p><strong>Final description</strong>: fill in light color patterns using same pattern as dark colors</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/5b526a93_01b14747ad84d6e0dfa8995f26d9c3c8_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 2</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Rows and columns are completed with the opposing  color in the same pattern.</p>
                 <p><strong>Final description</strong>: Rows and columns are completed with the opposing  color in the same pattern.</p>
               </div>
@@ -116,7 +167,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 2</h4>
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I had to line up light blue squares with the darker ones and put a black square in the middle of them</p>
                 <p><strong>Final description</strong>: Follow the lines of the dark blue squares and make light blue squares with black holes in the middle. The blue squares should mirror the left and bottom rows</p>
               </div>
@@ -145,7 +196,31 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 3</h4>
+                <h4>Participant 4</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: add light blue blocks the same length and width away from the original dark blue blocks on the edge</p>
+                <p><strong>Final description</strong>: add light blue blocks the same length and width away from the original dark blue blocks on the edge</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/5b526a93_4b9ff461bcb8a879552b1f91fafae97c_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Make light blue squares in each row and colum where there is a a dark blue square at the same spacing as the dark blue squares.</p>
                 <p><strong>Final description</strong>: Make light blue squares in each row and colum where there is a a dark blue square at the same spacing as the dark blue squares.</p>
               </div>
@@ -169,7 +244,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Each "blue" box requires a "light blue" box both horizontally and vertically to form a larger grid pattern of boxes.</p>
                 <p><strong>Final description</strong>: Each "blue" box requires a "light blue" box both horizontally and vertically to form a larger grid pattern of boxes.</p>
               </div>
@@ -193,7 +268,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: You basically complete the design with a lighter blue pattern outlined by the darker blue pattern. You use the same shape and match the distances of the other blocks.</p>
                 <p><strong>Final description</strong>: You basically complete the design with a lighter blue pattern outlined by the darker blue pattern. You use the same shape and match the distances of the other blocks.</p>
               </div>
@@ -217,7 +292,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Light blue boxes are put where the vertical and horizontal dark blue boxes would intersect in the grid.</p>
                 <p><strong>Final description</strong>: Light blue boxes are put where the vertical and horizontal dark blue boxes would intersect in the grid.</p>
               </div>

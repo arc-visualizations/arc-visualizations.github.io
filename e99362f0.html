@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>e99362f0.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="c62e2108.html">Previous task</a><br /></li>
+                <li><a href="5d2a5c43.html">Previous task</a><br /></li>
                 <li><a href="1acc24af.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -86,14 +114,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_input_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 4</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_output_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 4</strong></figcaption>
@@ -102,14 +130,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_input_5.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 5</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_output_5.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 5</strong></figcaption>
@@ -118,14 +146,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_input_6.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 6</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_train_output_6.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 6</strong></figcaption>
@@ -135,14 +163,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/e99362f0_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -150,8 +178,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -313,6 +340,39 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 6</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: the rule was to transform all the blocks into this demonstration</p>
+                <p><strong>Final description</strong>: the rule was to fit in all the blocks </p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_6e696d512ffe14d3ab2abd69bcafff22_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_6e696d512ffe14d3ab2abd69bcafff22_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_6e696d512ffe14d3ab2abd69bcafff22_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The sample input is zoomed in on the bottom right corner and it is recreated, using the orange, red and brown squares as a fill-in.</p>
                 <p><strong>Final description</strong>: Recreate the bottom right corner of the sample input, using all of the colored squares</p>
               </div>
@@ -345,7 +405,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The colors copied over in the same order of quadrants </p>
                 <p><strong>Final description</strong>: I have NO idea</p>
               </div>
@@ -378,7 +438,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: In a smaller grid you start with the blue blocks and fill in with with the other colors starting with the burgundy, orange, and red. Based on the previous grid on what fits the blanks.</p>
                 <p><strong>Final description</strong>: In a smaller grid you start with the blue blocks and fill in with with the other colors starting with the burgundy, orange, and red. Based on the previous grid on what fits the blanks.</p>
               </div>
@@ -402,7 +462,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a grid by coloring in the blue tiles as shown in quadrant four. Then fill and overlap according to the other quadrants 1-3 in accordance with thieisoverlap and alternaitng.</p>
                 <p><strong>Final description</strong>: I thought the rule was to use quadrant 4 to fill in the corresponding blue tiles, followed by alternating, overlapping tiles in the other colorsl.</p>
               </div>
@@ -435,7 +495,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I followed the example from Output 3 since that was the next logical order and tried to follow the pattern of what colors took precedence.</p>
                 <p><strong>Final description</strong>: I didn’t figure it out.  I thought there were certain colors which took precedence in each row.</p>
               </div>
@@ -468,7 +528,40 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 12</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Create a pattern that extracts colors matching specific position from quadrants 1 to 4 in the input into a test output with the size of one quadrant</p>
+                <p><strong>Final description</strong>: Did not figure out the exact pattern, focused only on example output 1</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_b689fa4f9ba6650b6772e9c3c283c1f1_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_b689fa4f9ba6650b6772e9c3c283c1f1_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_b689fa4f9ba6650b6772e9c3c283c1f1_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 13</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Take each quadrant in order, starting from upper left, then upper right, then lower left, then lower right and recreate it on the new grid and overlay each color as you progress.</p>
                 <p><strong>Final description</strong>: Some order of recreating the quadrants and overlaying them one on top of each other but I could not work out in what order.</p>
               </div>
@@ -501,7 +594,73 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 12</h4>
+                <h4>Participant 14</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Using the blue tiles as the blue print fill in the available spaces with the colors that correspond to the remaining spaces.</p>
+                <p><strong>Final description</strong>: Using the blue tiles as a blue print fill in the remaining spaces with the corresponding colors. </p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_c5856559bbd16f21173110221a814708_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_c5856559bbd16f21173110221a814708_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_c5856559bbd16f21173110221a814708_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 15</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Arrange the colors in a 5X4 grid by simplifying the original pattern and ensuring each color occupies a distinct position based on its distribution in the input.</p>
+                <p><strong>Final description</strong>: Transform the grid to a 5x4 pattern, eliminate all yellow blocks, and group the blocks according to their frequency and position in the input grid.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_dce18448933f1329d93fcc2615dbd189_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_dce18448933f1329d93fcc2615dbd189_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/e99362f0_dce18448933f1329d93fcc2615dbd189_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 16</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Each squadron from the input takes from the their respective 4 squares into the test input</p>
                 <p><strong>Final description</strong>: Each squadron from the input takes from the their respective 4 squares into the test input</p>
               </div>
@@ -534,7 +693,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 13</h4>
+                <h4>Participant 17</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Combine the patterns from each quadrant into one 4x5 pattern. The order of importance is blue > orange > maroon > red.</p>
                 <p><strong>Final description</strong>: Combine the patterns from each quadrant into one 4x5 pattern. The order of importance is blue > orange > maroon > red.</p>
               </div>

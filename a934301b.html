@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>a934301b.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="759f3fd3.html">Previous task</a><br /></li>
-                <li><a href="e7dd8335.html">Next task</a></li>
+                <li><a href="8dae5dfc.html">Previous task</a><br /></li>
+                <li><a href="4e469f39.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/a934301b_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/a934301b_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/a934301b_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/a934301b_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/a934301b_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/a934301b_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/a934301b_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/a934301b_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,8 +130,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -238,6 +265,30 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 6</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Shapes with zero or one light blue squares stay.</p>
+                <p><strong>Final description</strong>: Shapes with zero or one light blue squares stay.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/a934301b_5b19fc9f288ef4a1bd22a2cb9db89b97_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Copy over input grid, then black out the contrasting areas containing two or more light blue bits.</p>
                 <p><strong>Final description</strong>: Copy over input grid, then black out the contrasting areas containing two or more light blue bits.</p>
               </div>
@@ -261,7 +312,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: If the set of blue squares has either 1 or less light blue squares inside it, then keep the entire set as is. If the set of blue squares has more than 1 light blue squares inside it, then replace the entire set with black squares.</p>
                 <p><strong>Final description</strong>: If the set of blue squares has either 1 or less light blue squares inside it, then keep the entire set as is. If the set of blue squares has more than 1 light blue squares inside it, then replace the entire set with black squares.</p>
               </div>
@@ -285,7 +336,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a checkboard pattern by alternating between the two colors in each row</p>
                 <p><strong>Final description</strong>: Create a checkboard pattern by alternating between the two colors in each row</p>
               </div>
@@ -318,7 +369,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Keep the objects that have zero or one white square, paint the rest of the objects black.</p>
                 <p><strong>Final description</strong>: Keep the objects that have zero or one white square, paint the rest of the objects black.</p>
               </div>
@@ -342,7 +393,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a duplicate pattern only transferring the pattens containing 1 light blue square or less</p>
                 <p><strong>Final description</strong>: Create a duplicate pattern only transferring the pattens containing 1 light blue square or less</p>
               </div>
@@ -366,7 +417,31 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 12</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: To copy only the blue boxes that have 1 or no light blue box</p>
+                <p><strong>Final description</strong>: To copy only the blue boxes that have 1 or no light blue box</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/a934301b_df6bfc26960d17d92e844f76241c38fa_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 13</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: All boxes that had 1 or less light blue squares</p>
                 <p><strong>Final description</strong>: All boxes that had 1 or less light blue squares</p>
               </div>
@@ -390,7 +465,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 12</h4>
+                <h4>Participant 14</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: surround the one light blue box with darker blue boxes. </p>
                 <p><strong>Final description</strong>: To create a blue border around the light blue block
 </p>

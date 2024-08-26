@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>17b80ad2.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="e9bb6954.html">Previous task</a><br /></li>
-                <li><a href="1a6449f1.html">Next task</a></li>
+                <li><a href="6ad5bdfd.html">Previous task</a><br /></li>
+                <li><a href="12422b43.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/17b80ad2_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/17b80ad2_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/17b80ad2_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/17b80ad2_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/17b80ad2_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/17b80ad2_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -86,14 +114,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/17b80ad2_train_input_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 4</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/17b80ad2_train_output_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 4</strong></figcaption>
@@ -103,14 +131,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/17b80ad2_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/17b80ad2_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -118,13 +146,36 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
               <div class="col-12">
                 <h4>Participant 1</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: The columns with the gray boxes at the bottom fill up with gray until they reach another color.  Then the boxes above it change to the new color until they reach a new color until it changes again.</p>
+                <p><strong>Final description</strong>: The columns with the gray boxes at the bottom fill up with gray until they reach another color.  Then the boxes above it change to the new color until they reach a new color until it changes again.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/17b80ad2_10a301cb307b863eb88559a229b1ad30_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 2</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I did the fourth example</p>
                 <p><strong>Final description</strong>: I did the fourth example</p>
               </div>
@@ -157,7 +208,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 2</h4>
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: On the rows that had gray at the bottom, I continued the color upwards until reaching another color, then I continued that color.</p>
                 <p><strong>Final description</strong>: On the rows that had gray at the bottom. I continued the color upward until I reached another color, then I continued that color.</p>
               </div>
@@ -186,7 +237,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 3</h4>
+                <h4>Participant 4</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a grid matching the 17x17 example, using the same columns and coloring upwards from the blocks in that column.</p>
                 <p><strong>Final description</strong>: Copy the example 1, using the gray boxes at the bottom to select the columns to color up to the top, changing colors when you hit a new block.</p>
               </div>
@@ -215,7 +266,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Every colored square that has empty squares above it should turn those empty squares that same color, but not the ones below. Stop when another color gets in the way.</p>
                 <p><strong>Final description</strong>: I thought it was to create the same grid size, and to match the colors all the way up from one colored square until another one got in the way.</p>
               </div>
@@ -248,7 +299,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The size of the output is the same as the size of the input.  Columns with no grey box at the bottom are left the same.  Columns with grey boxes at the bottom have colors extended up to the next colored box in the same column for the output.  So grey is extended from the bottom to the first color.  Then that color is extended up the column to the next color, and so on, until the top of the column is reached.</p>
                 <p><strong>Final description</strong>: The size of the output is the same as the size of the input.  Columns with no grey box at the bottom are left the same.  Columns with grey boxes at the bottom have colors extended up to the next colored box in the same column for the output.  So grey is extended from the bottom to the first color.  Then that color is extended up the column to the next color, and so on, until the top of the column is reached.</p>
               </div>
@@ -272,7 +323,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a column with the grey boxes using the correct colors.</p>
                 <p><strong>Final description</strong>: Create a column with the grey boxes using the correct colors.</p>
               </div>
@@ -296,7 +347,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Look, I've been plotting along on this grid for too long. I have figured it out but I am running out of time and the tediousness of visually determining the difference between the colors is taxing.</p>
                 <p><strong>Final description</strong>: See prior message.</p>
               </div>
@@ -329,7 +380,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I needed to find the correct grid. Then I needed to count over to columns 6 and 10. The colored boxes in those grids continued upwards. Then I transferred all other colors to their appropriate spots.</p>
                 <p><strong>Final description</strong>: See previous comment. I thought that was what I needed to do. I even checked my work twice.</p>
               </div>
@@ -362,7 +413,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Only make changes to the columns where there is a grey block at the bottom. Starting from the grey block, fill up with the appropriate color until you hit another color. Change to that color and repeat, going up until you hit another color. Repeat until the whole column is filled.</p>
                 <p><strong>Final description</strong>: Only make changes to the columns where there is a grey block at the bottom. Starting from the grey block, fill up with the appropriate color until you hit another color. Change to that color and repeat, going up until you hit another color. Repeat until the whole column is filled.</p>
               </div>
@@ -386,7 +437,36 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: if there are 17 boxes per side, then each color on columns 6, 10, and 15 extend upwards from the bottom until they hit a different color.</p>
+                <p><strong>Final description</strong>: if the bottom tile of a column is gray then the column extends upwards in that color, changing as it reaches a new color until the entire column is filled.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/17b80ad2_d231f7557ee47ca095c503834919a5b2_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/17b80ad2_d231f7557ee47ca095c503834919a5b2_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 12</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I have no rhyme or reason for this one, it is too complicated for me to solve. Based on the examples, I'm just trying what I think could be somewhat plausible.</p>
                 <p><strong>Final description</strong>: I'm completely stumped and confused on this one. I couldn't even follow the examples because it felt too complex and overwhelming.</p>
               </div>
@@ -419,7 +499,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 13</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: i am randomly guessing</p>
                 <p><strong>Final description</strong>: i am randomly guessing</p>
               </div>

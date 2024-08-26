@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>1da012fc.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="3194b014.html">Previous task</a><br /></li>
-                <li><a href="67c52801.html">Next task</a></li>
+                <li><a href="67c52801.html">Previous task</a><br /></li>
+                <li><a href="575b1a71.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/1da012fc_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/1da012fc_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/1da012fc_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/1da012fc_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -71,14 +99,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/1da012fc_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/1da012fc_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -86,8 +114,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -126,6 +153,30 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 2</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Fill the shape color to represent the similarly positioned sample grid in the corner. </p>
+                <p><strong>Final description</strong>: Fill the shape color to represent the similarly positioned sample grid in the corner. </p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/1da012fc_3c77da5dce8dbede95574782508fe334_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Match each figure with the corresponding colors in the grey grid in its position. </p>
                 <p><strong>Final description</strong>: Match each figure with the corresponding colors in the grey grid in its position. </p>
               </div>
@@ -149,7 +200,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 3</h4>
+                <h4>Participant 4</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Copy the same Input into the Output </p>
                 <p><strong>Final description</strong>: The legend for the new colors of the shapes are in the grey box. Everything else is the same</p>
               </div>
@@ -182,7 +233,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The rule was to transform the color of the figures to the respective color in the smaller grid.</p>
                 <p><strong>Final description</strong>: The rule was to transform the color of the figures to the respective color in the smaller grid.</p>
               </div>
@@ -206,7 +257,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Assign colors to the shapes based on the colors present in the gray box.</p>
                 <p><strong>Final description</strong>: Assign colors to the shapes based on the colors present in the gray box.</p>
               </div>
@@ -230,7 +281,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The pattern was recoloring the shapes in the black area to match the colors in the gray area by relative location.</p>
                 <p><strong>Final description</strong>: The pattern was recoloring the shapes in the black area to match the colors in the gray area by relative location.</p>
               </div>
@@ -254,7 +305,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The colors in the box represent the colors I need to use in the output. The shapes remain unchanged.</p>
                 <p><strong>Final description</strong>: The colors in the box represent the colors I need to use in the output. The shapes remain unchanged.</p>
               </div>
@@ -278,7 +329,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Keep the shapes the same, but change the colors to be the same as those in the secondary box with the grey background.</p>
                 <p><strong>Final description</strong>: Keep the shapes the same, but change the colors to be the same as those in the secondary box with the grey background.</p>
               </div>
@@ -302,7 +353,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: change color of shapes in black boxes to corresponding color inside grey box</p>
                 <p><strong>Final description</strong>: change color of shapes in black boxes to corresponding color inside grey box</p>
               </div>
@@ -326,7 +377,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Match the shapes to the colors in the bottom right.  Color them depending on the location.</p>
                 <p><strong>Final description</strong>: Match the shapes to the colors in the bottom right.  Color them depending on the location.</p>
               </div>
@@ -350,7 +401,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 12</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The gray box corresponds to the color and location of what the transformation to new colors should be.</p>
                 <p><strong>Final description</strong>: The gray box corresponds to the color and location of what the transformation to new colors should be.</p>
               </div>

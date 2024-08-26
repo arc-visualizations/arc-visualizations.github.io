@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>ba26e723.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="training.html">Training tasks</a><br /></li>
-                <li><a href="ac0a08a4.html">Previous task</a><br /></li>
-                <li><a href="11852cab.html">Next task</a></li>
+                <li><a href="aba27056.html">Previous task</a><br /></li>
+                <li><a href="444801d8.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -86,14 +114,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_train_input_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 4</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_train_output_4.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 4</strong></figcaption>
@@ -102,14 +130,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_train_input_5.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 5</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_train_output_5.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 5</strong></figcaption>
@@ -119,14 +147,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/ba26e723_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -134,8 +162,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -165,30 +192,6 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 2</h4>
-                <p style="margin: 0"><strong>Initial description</strong>: skip one</p>
-                <p><strong>Final description</strong>: skip one</p>
-              </div>
-            </div>
-            <br />
-            <div class="row">
-            
-                    <div class="col-3">
-                      <figure class="figure">
-                        <img src="img/responses/ba26e723_1dccae464a973a6fd73291a87f3c69fc_attempt_1.png" class="figure-img img-fluid">
-                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
-                      </figure>
-                    </div>
-                    
-                    <div class="col-3">
-                    </div>
-                    <div class="col-3">
-                    </div>
-                
-            </div>
-            
-            <div class="row">
-              <div class="col-12">
-                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: After copying the test input, add pink squares below or above the black square, starting on the first vertical line, then skip two, and add two pink squares below or above the black square. Do this on repeat.</p>
                 <p><strong>Final description</strong>: After copying the test input, add pink squares below or above the black square, starting on the first vertical line, then skip two, and add two pink squares below or above the black square. Do this on repeat.</p>
               </div>
@@ -212,7 +215,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Followed the yellow grid and added in the pink steps between yellow blacks.</p>
                 <p><strong>Final description</strong>: I used the yellow ghrid as assigned and added in the pink steps.</p>
               </div>
@@ -241,7 +244,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 4</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Replace the yellows with pink in the first column and in every third column after that.</p>
                 <p><strong>Final description</strong>: Replace the yellows with pink in the first column and in every third column after that.</p>
               </div>
@@ -265,7 +268,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: too complicated task</p>
                 <p><strong>Final description</strong>: too complicated task</p>
               </div>
@@ -289,7 +292,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Copy the input, then change the leftmost column to pink, leave 2 yellow, change the next one to pink, etc.</p>
                 <p><strong>Final description</strong>: Copy the grid, change the left column to pink, leave the next 2 yellow, make the next one pink, etc.</p>
               </div>
@@ -318,7 +321,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Every third vertical line was turned purple.</p>
                 <p><strong>Final description</strong>: Every third vertical line was turned purple.</p>
               </div>
@@ -342,7 +345,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: excellent</p>
                 <p><strong>Final description</strong>: excellent</p>
               </div>
@@ -366,7 +369,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Change every third column to pink.</p>
                 <p><strong>Final description</strong>: Change every third column to pink.</p>
               </div>
@@ -390,7 +393,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: It seems like you just expand Example two here to logically derive this.</p>
                 <p><strong>Final description</strong>: It seems like you just expand Example two here to logically derive this.</p>
               </div>
@@ -414,7 +417,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 12</h4>
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The two yellow squares that start the grid on the left hand side need to be turned pink. Then going to the right, I skipped two yellow spaces and went the opposite direction and changed those yellow squares to pink, and continued on in the pattern, every third yellow row going vertically were turned pink. </p>
                 <p><strong>Final description</strong>: The two yellow squares that start the grid on the left hand side need to be turned pink. Then going to the right, I skipped two yellow spaces and went the opposite direction and changed those yellow squares to pink, and continued on in the pattern, every third yellow row going vertically were turned pink. </p>
               </div>
@@ -438,7 +441,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 13</h4>
+                <h4>Participant 12</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Starting with the first column on the left, change the yellow squares to pink. Moving right, skip two columns and change the yellow squares to pink.  Continue skipping two columns and then coloring the squares until the end of the grid is reached.</p>
                 <p><strong>Final description</strong>: Starting with the first column on the left, change the yellow squares to pink. Moving right, skip two columns and change the yellow squares to pink.  Continue skipping two columns and then coloring the squares until the end of the grid is reached.</p>
               </div>

@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>c64f1187.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="3391f8c0.html">Previous task</a><br /></li>
-                <li><a href="070dd51e.html">Next task</a></li>
+                <li><a href="1d398264.html">Previous task</a><br /></li>
+                <li><a href="8fbca751.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/c64f1187_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/c64f1187_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/c64f1187_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/c64f1187_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -71,14 +99,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/c64f1187_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/c64f1187_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -86,8 +114,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -221,6 +248,39 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 5</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: the rule was to mimic the colors by the shapes shown in the demonstration</p>
+                <p><strong>Final description</strong>: i had to make sure it was balanced and follow the color code</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/c64f1187_6e696d512ffe14d3ab2abd69bcafff22_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/c64f1187_6e696d512ffe14d3ab2abd69bcafff22_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/c64f1187_6e696d512ffe14d3ab2abd69bcafff22_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Color coordination; Recreate the input by coordinating the shape with the designated color</p>
                 <p><strong>Final description</strong>: Recreate the shapes, using the designated colors</p>
               </div>
@@ -253,7 +313,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The color and shade correspond and are repeated on out put</p>
                 <p><strong>Final description</strong>: The color and shade correspond and are repeated on out put</p>
               </div>
@@ -277,7 +337,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Make a grid to fit the size of the grey and color blocks. Then you fill in the grey with color that is in the one corner.</p>
                 <p><strong>Final description</strong>: Using the guide to see what shape each color is supposed to be you copy the grey squares onto the grid and follow the guide at the top to make the color match the color guide. So the light blue squares were 4 full squares.</p>
               </div>
@@ -306,7 +366,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a grid using the borders of the gray squares. Fill in the boxes with the pattern connected to the color of the dots above.</p>
                 <p><strong>Final description</strong>: Starting at the gray outermost box, create a grid pattern corresponding to the number of boxes at the edges. Create a 4x4 pattern with the box shape in the top, corresponding to the color indicated by the box in the gray squares. </p>
               </div>
@@ -335,7 +395,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The blue shapes dictate the shape while the gray squares show the location.</p>
                 <p><strong>Final description</strong>: The blue shapes dictate the shape while the gray squares show the location.</p>
               </div>
@@ -359,7 +419,55 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Each color in grey areas need to be replaced with the matching color shape as defined by the dark blue legend</p>
+                <p><strong>Final description</strong>: Each color in grey areas need to be replaced with the matching color shape as defined by the dark blue legend</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/c64f1187_b689fa4f9ba6650b6772e9c3c283c1f1_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 12</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Using the gray box create the grid and fill in the shapes associated with the colors in their shown position.</p>
+                <p><strong>Final description</strong>: Using the gray box create the grid and fill in the shapes associated with the colors in their shown position.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/c64f1187_c5856559bbd16f21173110221a814708_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 13</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Each shape was assigned a color, then their places mapped out for placement on the new chart.</p>
                 <p><strong>Final description</strong>: Each shape was assigned a color, then their places mapped out for placement on the new chart.</p>
               </div>
@@ -383,7 +491,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 14</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The colors above the shapes in the input indicate the color that the depicted shape will be. The squares below indicate the placement of that colored shape on the grid.</p>
                 <p><strong>Final description</strong>: The colors above the shapes in the input indicate the color that the depicted shape will be. The squares below indicate the placement of that colored shape on the grid.</p>
               </div>
@@ -407,7 +515,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 12</h4>
+                <h4>Participant 15</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The blue patterns at the top tell you what shape goes with the color of the square above each blue pattern. The bottom pattern tells you which colored shape to put in each 2x2 grid. Make it the same height/width as the section with the grey squares.</p>
                 <p><strong>Final description</strong>: The blue patterns at the top tell you what shape goes with the color of the square above each blue pattern. The bottom pattern tells you which colored shape to put in each 2x2 grid. Make it the same height/width as the section with the grey squares.</p>
               </div>

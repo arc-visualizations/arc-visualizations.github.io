@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>4b6b68e5.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="31adaf00.html">Previous task</a><br /></li>
-                <li><a href="5ffb2104.html">Next task</a></li>
+                <li><a href="4aab4007.html">Previous task</a><br /></li>
+                <li><a href="8a371977.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/4b6b68e5_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/4b6b68e5_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/4b6b68e5_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/4b6b68e5_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/4b6b68e5_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/4b6b68e5_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/4b6b68e5_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/4b6b68e5_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,13 +130,36 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
               <div class="col-12">
                 <h4>Participant 1</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Fill all the closed shapes with the color the most often shown grid color, and empty out the open shape.</p>
+                <p><strong>Final description</strong>: Fill all the closed shapes with the color the most often shown grid color, and empty out the open shape.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/4b6b68e5_03bfaef98653a09ed8aa8e08de334120_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 2</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Fill in the shapes with the color that appears most in each shape.</p>
                 <p><strong>Final description</strong>: Fill in the shapes with the color that appears most in each shape.</p>
               </div>
@@ -132,7 +183,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 2</h4>
+                <h4>Participant 3</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Just had to follow the other examples</p>
                 <p><strong>Final description</strong>: couldn't figure this one out, thought I had it right the first time.</p>
               </div>
@@ -165,7 +216,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 3</h4>
+                <h4>Participant 4</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Fill in with the dominant color in every shape, erase any colors outside the fill in areas</p>
                 <p><strong>Final description</strong>: Fill in with the dominant color in every shape, erase any colors outside the fill in areas</p>
               </div>
@@ -189,7 +240,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 4</h4>
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Filling in the area within shape. The fill color is the majority of the Test Input color. </p>
                 <p><strong>Final description</strong>: Filling in the area within shape. The fill color is the majority of the Test Input color. </p>
               </div>
@@ -213,7 +264,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Eliminate all single squares that aren't completely contained in a shape. Inside the shape, the most abundant color overrides the others to fill the shape.</p>
                 <p><strong>Final description</strong>: Eliminate all single squares that aren't completely contained in a shape. Inside the shape, the most abundant color overrides the others to fill the shape.</p>
               </div>
@@ -237,7 +288,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Fill in each shape with the color most inside the original. If the shape is open, it is filled with black.</p>
                 <p><strong>Final description</strong>: I thought that the rule was to fill in the shape with the color most present in it. But with an open shape, to have it be solid black.</p>
               </div>
@@ -270,7 +321,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I think the rule is to fill inside all the colored shaped tiles that are completely connected to each other without a gap with the random tile color that is scatter the most inside each complete colored shaped tile design.  For example, in this red tile shape design the tile color scatter the most in it is dark blue, and therefore, you need to fill in the red tile shape on the inside with dark blue.  Also, the tile shape that has a gap, you need to just copy it as it is.</p>
                 <p><strong>Final description</strong>: I think the rule is to fill inside all the colored shaped tiles that are completely connected to each other without a gap with the random tile color that is scatter the most inside each complete colored shaped tile design.  For example, in this red tile shape design the tile color scatter the most in it is dark blue, and therefore, you need to fill in the red tile shape on the inside with dark blue.  Also, the tile shape that has a gap, you need to just copy it as it is.</p>
               </div>
@@ -294,7 +345,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Fill closed shapes with whatever colored squares are most numerous.  All other external, single squares vanish.</p>
                 <p><strong>Final description</strong>: Fill closed shapes with whatever colored squares are most numerous.  All other external, single squares vanish.</p>
               </div>
@@ -318,7 +369,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: For every closed shape, count the amount of colored squares within said shape. Whatever color shows up the most will be the color used to fill in the closed shape. Every open shape should be empty, or filled with black, and every square not contained should be empty/black.</p>
                 <p><strong>Final description</strong>: For every closed shape, count the amount of colored squares within said shape. Whatever color shows up the most will be the color used to fill in the closed shape. Every open shape should be empty, or filled with black, and every square not contained should be empty/black.</p>
               </div>
@@ -342,7 +393,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 10</h4>
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Fill in the shapes with solid outlines with the color that the majority of the squares that are colored inside and erase all other squares that are not enclosed with solid outlines.</p>
                 <p><strong>Final description</strong>: Fill in the shapes with solid outlines with the color that the majority of the squares that are colored inside and erase all other squares that are not enclosed with solid outlines.</p>
               </div>
@@ -366,7 +417,31 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 11</h4>
+                <h4>Participant 12</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: the majority of the colored blocks that are on the inside should be the total color of the inside, if a shape is open, leave it empty, no colored blocks on the inside. There should be no remaining blocks on the outside of any shapes</p>
+                <p><strong>Final description</strong>: the majority of the colored blocks that are on the inside should be the total color of the inside, if a shape is open, leave it empty, no colored blocks on the inside. There should be no remaining blocks on the outside of any shapes</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/4b6b68e5_ddbb5541fe47fbe6167f4209a2a5a9ec_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 13</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Enclosed shapes from the input are filled with the most dominant cell color contained within the shape. If a shape is not enclosed, the colored cells turn black. Colored cells outside of the enclosed shape turn black. The shape outlines remain unchanged between input and output.</p>
                 <p><strong>Final description</strong>: Enclosed shapes from the input are filled with the most dominant cell color contained within the shape. If a shape is not enclosed, the colored cells turn black. Colored cells outside of the enclosed shape turn black. The shape outlines remain unchanged between input and output.</p>
               </div>
@@ -390,7 +465,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 12</h4>
+                <h4>Participant 14</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Eliminate all dots in open black areas. Color the inside of shapes with the prevailing dot color inside. </p>
                 <p><strong>Final description</strong>: Eliminate all dots in open black areas. Color the inside of shapes with the prevailing dot color inside. </p>
               </div>

@@ -11,13 +11,41 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
+            <style>
+     body, html {
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+      }
+      .main-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 10px;
+      }
+      .sidebar {
+        width: 50%;
+        height: 100%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+      }
+      .content {
+        flex-grow: 1;
+        height: 100%;
+        padding-bottom: 1%;
+        overflow-y: auto;
+        padding-left: 5%;
+      }
+    </style>
           </head>
           <body>
-            <div class="container">
+            <div class="main-container">
         
-        <div class="row">
-          <div class="position-fixed">
-            <div class="col-4">
+            <div class="sidebar">
               <br />
                 <h3>7039b2d7.json</h3>
      
@@ -31,21 +59,21 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="0d87d2a6.html">Previous task</a><br /></li>
-                <li><a href="9f27f097.html">Next task</a></li>
+                <li><a href="256b0a75.html">Previous task</a><br /></li>
+                <li><a href="7c8af763.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
         
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/7039b2d7_train_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 1</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/7039b2d7_train_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 1</strong></figcaption>
@@ -54,14 +82,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/7039b2d7_train_input_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 2</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/7039b2d7_train_output_2.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 2</strong></figcaption>
@@ -70,14 +98,14 @@
               </div>
             
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/7039b2d7_train_input_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Input 3</strong></figcaption>
                   </figure>
                 </div>
          
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/7039b2d7_train_output_3.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Train Output 3</strong></figcaption>
@@ -87,14 +115,14 @@
             
               <h4>Test Example</h4>
               <div class="row">
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/7039b2d7_test_input_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Input</strong></figcaption>
                   </figure>
                 </div>
            
-                <div class="col-4">
+                <div class="col-5">
                   <figure class="figure">
                     <img src=img/tasks/7039b2d7_test_output_1.png class="figure-img img-fluid">
                     <figcaption class="figure-caption text-center"><strong>Test Output</strong></figcaption>
@@ -102,8 +130,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-8 offset-4">
+        <div class="content">
         <br />
         
             <div class="row">
@@ -195,6 +222,30 @@
             <div class="row">
               <div class="col-12">
                 <h4>Participant 4</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: to create a grid using green as the setting adding one extra grid of the base grid color</p>
+                <p><strong>Final description</strong>: to create a grid using green as the setting adding one extra grid of the base grid color</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/7039b2d7_6d064862350fa4c0d214dcb1723ca20b_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 5</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: I took inspiration from example output 2.</p>
                 <p><strong>Final description</strong>: I was confused by this one, but I thought I was close.</p>
               </div>
@@ -227,7 +278,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 5</h4>
+                <h4>Participant 6</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Background color is the majority color.</p>
                 <p><strong>Final description</strong>: The majority color is the background color and you have four width and  height.</p>
               </div>
@@ -260,7 +311,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 6</h4>
+                <h4>Participant 7</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Make a grid with the background color that is the size of the sample lines as vertices.</p>
                 <p><strong>Final description</strong>: Make a grid with the background color that is the size of the sample lines as vertices.</p>
               </div>
@@ -284,7 +335,31 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 7</h4>
+                <h4>Participant 8</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: Create an output in which the number of segments created from the grid in the input is the length and width.</p>
+                <p><strong>Final description</strong>: Create an output in which the number of segments created from the grid in the input is the length and width.</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/7039b2d7_85af0b31496670c13ddf0c63e7ad57ac_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#228B22;'>Correct</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                    </div>
+                    <div class="col-3">
+                    </div>
+                
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 9</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: Create a checkerboard  pattern by alternating between two colors for each row.</p>
                 <p><strong>Final description</strong>: Create a checkerboard pattern by alternating between two colors in each row.</p>
               </div>
@@ -317,7 +392,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 8</h4>
+                <h4>Participant 10</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The rule for this task was that the lines created horizontal and vertical sections and the size of the output grid was determined by the amount of horizontal and vertical sections created by the lines. The output's color was also determined by the color of the sections. </p>
                 <p><strong>Final description</strong>: The rule for this task was that the lines created horizontal and vertical sections and the size of the output grid was determined by the amount of horizontal and vertical sections created by the lines. The output's color was also determined by the color of the sections. </p>
               </div>
@@ -341,7 +416,7 @@
             
             <div class="row">
               <div class="col-12">
-                <h4>Participant 9</h4>
+                <h4>Participant 11</h4>
                 <p style="margin: 0"><strong>Initial description</strong>: The "lines" in the input mark out rows and columns of cells. Simplify these to one cell per row/column, and make them the same color as the predominant color in the input.</p>
                 <p><strong>Final description</strong>: The "lines" in the input mark out rows and columns of cells. Simplify these to one cell per row/column, and make them the same color as the predominant color in the input.</p>
               </div>
@@ -361,6 +436,39 @@
                     <div class="col-3">
                     </div>
                 
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <h4>Participant 12</h4>
+                <p style="margin: 0"><strong>Initial description</strong>: match largest color grouping and have no intersecting other color lines</p>
+                <p><strong>Final description</strong>: use same color as input grid background without kines, number of grid boxes rules not figured out</p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+            
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/7039b2d7_f05df4ae3f56160e841ccd7029ca748c_attempt_1.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt 1:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/7039b2d7_f05df4ae3f56160e841ccd7029ca748c_attempt_2.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  2:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-3">
+                      <figure class="figure">
+                        <img src="img/responses/7039b2d7_f05df4ae3f56160e841ccd7029ca748c_attempt_3.png" class="figure-img img-fluid">
+                        <figcaption class="figure-caption text-center"><strong>Attempt  3:</strong> <strong style='color:#FF4136;'>Incorrect</strong></figcaption>
+                      </figure>
+                    </div>
+                    
             </div>
             
         </div>
