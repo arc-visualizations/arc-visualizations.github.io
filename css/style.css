@@ -1,6 +1,37 @@
+.graph-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 #graph-container {
-  height: 700px;
-  width: 700px;
+  height: 600px;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-state-wrapper {
+  width: 100%;
+  max-width: 50%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#current_state {
+  height: 200px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.figure-img.img-fluid.response-img {
+  max-height: 300px;
 }
 
 ul,
@@ -8,7 +39,6 @@ li {
   margin-left: 0;
   padding-left: 0;
 }
-
 p {
   margin: 0;
 }

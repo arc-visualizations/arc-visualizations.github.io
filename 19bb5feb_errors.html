@@ -11,26 +11,27 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
-                        <style>
+            <style>
      body, html {
         height: 100%;
-        margin: 5%;
+        margin-left: 2.5%;
+       
         overflow: hidden;
       }
       .main-container {
         display: flex;
         height: 100vh;
         width: 100%;
-        margin-left: 1%;
         margin-top: 10px;
       }
       .sidebar {
-        width: 50%;
+        width: 400px;
         height: 100%;
         padding-left: 1%;
         padding-bottom: 1%;
         overflow-y: auto;
         border-right: 1px solid #ccc;
+        flex-shrink: 0.5;
       }
       .content {
         flex-grow: 1;
@@ -45,9 +46,8 @@
             <div class="main-container">
         
         <div class="sidebar">
-            <div class="col-5">
               <br />
-                <h3>19bb5feb.json</h3>
+                <h3>19bb5feb</h3>
      
               <ul>
               <li><a href="19bb5feb.html">Participant Responses</a><br /></li>
@@ -59,8 +59,8 @@
               <ul>
                 <li><a href="index.html">Home</a><br /></li>
                 <li><a href="evaluation.html">Evaluation tasks</a><br /></li>
-                <li><a href="9aec4887_errors.html">Previous task</a><br /></li>
-                <li><a href="ba9d41b8_errors.html">Next task</a></li>
+                <li><a href="99fa7670_errors.html">Previous task</a><br /></li>
+                <li><a href="ac0a08a4_errors.html">Next task</a></li>
               </ul>
      
               <h4>Train Examples</h4>
@@ -133,81 +133,12 @@
         <div class="content">
         <br />
         
-            <div class="row">
-        
-        <div class="col-3">
-          <figure class="figure">
-            <img src=img/tasks/19bb5feb_test_output_1.png class="figure-img img-fluid">
-            <figcaption class="figure-caption text-center"><strong>Correct Output</strong></figcaption>
-          </figure>
-        </div>
-        <div class="col-9">
+        <div class="row">
+          <div class="col-12">
+            <h4>No errors were made on this task!</h4>
+          </div>
         </div>
         
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/19bb5feb_5304b0b4420812b26c64f095873beb92.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/19bb5feb_3ef53bb05cdb7aa1412465973bc7dd61.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 4</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/19bb5feb_2dbc9f08739ff4018b63d8099814ca1b.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 4</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/19bb5feb_b54ef8b0cf6af0179e33fe1a9690da4f.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 3</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/19bb5feb_b58f7ca2158eef8ffd9552ca9e982f30.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 4</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/19bb5feb_e9214d7b704d26e06884723fa04edea3.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 4</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/19bb5feb_44dfd9605050f159e1f6faaf3f841861.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/19bb5feb_d02708f82a5a4ff596f7086cccbe27bc.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 1</strong></figcaption>
-              </figure>
-            </div>
-            
-            <div class="col-3">
-              <figure class="figure">
-                <img src=img/errors/19bb5feb_cd972b0a19016b9d17fb356bf45d138b.png class="figure-img img-fluid">
-                <figcaption class="figure-caption text-center"><strong>Error Frequency: 2</strong></figcaption>
-              </figure>
-            </div>
-            
-        </div>
         </div>
         </div>
         
@@ -217,5 +148,5 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
       </body>
-    </html>
+        </html>
         

@@ -11,33 +11,35 @@
             <link rel="stylesheet" href="css/bootstrap-custom.css">
             <link rel="stylesheet" href="css/style.css">
             <title>ARC Visualizations</title>
-                                    <style>
+            <style>
      body, html {
         height: 100%;
-        margin: 5%;
+        margin-left: 2.5%;
+       
         overflow: hidden;
       }
       .main-container {
         display: flex;
         height: 100vh;
         width: 100%;
-        margin-left: 1%;
         margin-top: 10px;
       }
       .sidebar {
-        width: 50%;
+        width: 400px;
         height: 100%;
         padding-left: 1%;
         padding-bottom: 1%;
         overflow-y: auto;
         border-right: 1px solid #ccc;
+        flex-shrink: 0.5;
       }
       .content {
-        flex-grow: 1;
-        height: 100%;
-        padding-bottom: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-right: 5%;
         overflow-y: auto;
-        padding-left: 5%;
       }
     </style>
           </head>
@@ -45,9 +47,8 @@
             <div class="main-container">
         
           <div class="sidebar">
-            <div class="col-5">
               <br />
-              <h3>a2fd1cf0.json</h3>
+              <h3>a2fd1cf0</h3>
      
               <ul>
               <li><a href="a2fd1cf0.html">Participant Responses</a><br /></li>
@@ -130,29 +131,19 @@
               </div>
             </div>
           </div>
-        <div class="content">
-        <br />
-                <br />
-              <div class="row">
-                <div class="col-8">
+          
+ <div class="content">
+              <div class="graph-wrapper">
                   <div id="graph-container"></div>
-                </div>
               </div>
               
-              <br />
-              <br />
-              <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
+              <div class="current-state-wrapper">
                     <figure class="figure">
                       <img src=img/states/44dfd9605050f159e1f6faaf3f841861.png class="figure-img img-fluid" id="current_state">
                       <figcaption class="figure-caption text-center" id="current_state_caption"><strong>Current State</strong></figcaption>
                     </figure>
                 </div>
-                <div class="col-4"></div>
               </div>
-              </div>
-            </div>
           </div>
 
           
