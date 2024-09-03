@@ -34,6 +34,15 @@
   max-height: 300px;
 }
 
+.figure-img.img-fluid.error-img {
+  max-width: 200px;
+}
+
+.index-img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
 ul,
 li {
   margin-left: 0;
@@ -42,3 +51,16 @@ li {
 p {
   margin: 0;
 }
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.25em;
+}
+/*
+.icon.img {
+  width: 10px;
+  height: 10px;
+  fill: currentColor;
+}
+ */

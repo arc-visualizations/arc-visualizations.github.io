@@ -21,84 +21,350 @@
         width: 500px;
       }
       #current_state {
-        height: 200px;
+        height: 150px;
         width: 100%;
       }
+      p {
+        font-size: large;
+      }
+      .description {
+        margin-bottom: 15px;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .btn-dark {
+        margin-top: 5%;
+        font-size: 1.25em;
+      }
+      .main-container {
+        padding-bottom: 100px;
+      }
     </style>
-    <title>ARC Visualizations</title>
+    <title>H-ARC</title>
   </head>
   <body>
-    <div class="container">
-      <br />
-      <h3>ARC Behavioral Data Visualizations</h3>
-      <p>
-        The Abstraction and Reasoning Corpus (ARC) is a challenging
-        program induction dataset that was proposed by Chollet (2019).
-        Here, we report a comprehensive set of results collected from
-        a two-phase behavioral study of humans solving ARC tasks from
-        the training set and from the evaluation set.
-      </p>
-      <hr />
+    <div class="main-container container">
       <br />
       <div class="row">
-        <div class="col-6">
-          <div id="graph-container"></div>
-        </div>
-        <div class="col-4 offset-1">
-          <figure class="figure text-center" style="margin-top: 40%">
-            <img src=img/states/44dfd9605050f159e1f6faaf3f841861.png
-            class="figure-img img-fluid" id="current_state">
-            <figcaption
-              class="figure-caption text-center"
-              id="current_state_caption"
-            >
-              <strong>Current State</strong>
-            </figcaption>
-          </figure>
+        <div class="col-md">
+          <h1 class="title is-1 text-center">
+            H-ARC: A Robust Estimate of Human Performance on the
+            Abstraction and Reasoning Corpus
+          </h1>
         </div>
       </div>
-      <div class="row" style="margin-top: 10%; margin-bottom: 20%">
-        <div class="col-4">
-          <h4>About the project</h4>
-          <p>
-            Learn more about the Abstraction and Reasoning Corpus
-            (ARC) behavioral dataset.
+      <div class="row">
+        <div class="col-md">
+          <h3 class="title is-3 text-center">
+            Solim LeGris, Wai Keen Vong, Brenden M. Lake and Todd M.
+            Gureckis
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <h4 class="text-center">New York University</h4>
+        </div>
+      </div>
+      <div
+        class="row justify-content-md-center text-center"
+        style="margin-top: 20px; margin-bottom: 30px"
+      >
+        <div class="col-auto lg-2">
+          <a
+            href="papers/legrisetal-2024-arxiv.pdf"
+            class="badge badge-pill badge-dark"
+            style="padding: 0.75em 1.5em; font-size: 0.85em"
+          >
+            <span>
+              <img
+                class="icon"
+                src="img/icons/regular-file-pdf.svg"
+              />
+            </span>
+            Paper
+          </a>
+        </div>
+        <div class="col-auto lg-2">
+          <a
+            href="#"
+            class="badge badge-pill badge-dark"
+            style="padding: 0.75em 1.5em; font-size: 0.85em"
+          >
+            <span>
+              <img class="icon" src="img/icons/arxiv-logo.svg" />
+            </span>
+            arXiv
+          </a>
+        </div>
+        <div class="col-auto lg-2">
+          <a
+            href="https://github.com/Le-Gris/h-arc"
+            class="badge badge-pill badge-dark"
+            style="padding: 0.75em 1.5em; font-size: 0.85em"
+          >
+            <span>
+              <img class="icon" src="img/icons/github-alt.svg" />
+            </span>
+            Dataset
+          </a>
+        </div>
+      </div>
+      <hr />
+      <h3 class="text-center" style="margin-bottom: 30px">
+        How well do people reason about abstract visual program
+        induction problems?
+      </h3>
+      <div class="row">
+        <div class="col" style="padding-left: 5%; padding-right: 0%">
+          <h4 class="title text-center">Training examples</h4>
+          <p class="text-justify description">
+            People were asked to infer an underlying rule or program
+            using training examples from 5 randomly select problems.
           </p>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3 text-center">
+              <figure class="figure">
+                <img src=img/tasks/e3497940_train_input_1.png
+                class="figure-img img-fluid index-img">
+                <figcaption class="figure-caption text-center">
+                  <strong>Train Input 1</strong>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-2 text-center">
+              <span class="align-self-center">
+                <img class="icon" src="img/icons/right-arrow.svg" />
+              </span>
+            </div>
+
+            <div class="col-3 text-center">
+              <figure class="figure">
+                <img src=img/tasks/e3497940_train_output_1.png
+                class="figure-img img-fluid index-img">
+                <figcaption class="figure-caption text-center">
+                  <strong>Train Output 1</strong>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3 text-center">
+              <figure class="figure">
+                <img src=img/tasks/e3497940_train_input_2.png
+                class="figure-img img-fluid index-img">
+                <figcaption class="figure-caption text-center">
+                  <strong>Train Input 2</strong>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-2 text-center">
+              <span class="align-self-center">
+                <img class="icon" src="img/icons/right-arrow.svg" />
+              </span>
+            </div>
+
+            <div class="col-3 text-center">
+              <figure class="figure">
+                <img src=img/tasks/e3497940_train_output_2.png
+                class="figure-img img-fluid index-img">
+                <figcaption class="figure-caption text-center">
+                  <strong>Train Output 2</strong>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3 text-center">
+              <figure class="figure">
+                <img src=img/tasks/e3497940_train_input_3.png
+                class="figure-img img-fluid index-img">
+                <figcaption class="figure-caption text-center">
+                  <strong>Train Input 3</strong>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-2 text-center">
+              <span class="align-self-center">
+                <img class="icon" src="img/icons/right-arrow.svg" />
+              </span>
+            </div>
+
+            <div class="col-3 text-center">
+              <figure class="figure">
+                <img src=img/tasks/e3497940_train_output_3.png
+                class="figure-img img-fluid index-img">
+                <figcaption class="figure-caption text-center">
+                  <strong>Train Output 3</strong>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <h4 class="title text-center">Test Example</h4>
+          <div class="row">
+            <p class="text-justify description">
+              Using their inferred rule or program, people were asked
+              to generate an output for a given test input in three
+              attempts or less.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3 text-center">
+              <figure class="figure">
+                <img src=img/tasks/e3497940_test_input_1.png
+                class="figure-img img-fluid index-img">
+                <figcaption class="figure-caption text-center">
+                  <strong>Test Input</strong>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-2 text-center">
+              <span class="align-self-center">
+                <img class="icon" src="img/icons/right-arrow.svg" />
+              </span>
+            </div>
+
+            <div class="col-3 text-center">
+              <figure class="figure">
+                <img src=img/tasks/e3497940_test_output_1.png
+                class="figure-img img-fluid index-img">
+                <figcaption class="figure-caption text-center">
+                  <strong>Test Output</strong>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="content col-md-6 text-center">
+          <h4 class="title text-center">State Space Graph</h4>
+          <p class="text-justify description">
+            We collected action by action data from 1729 participants.
+            The graph below shows visited states from all participants
+            that attempted the particular task shown here.
+          </p>
+          <div class="graph-wrapper">
+            <div id="graph-container"></div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="current-state-wrapper">
+              <figure class="figure">
+                <img
+                src=img/states/44dfd9605050f159e1f6faaf3f841861.png
+                class="figure-img img-fluid" id="current_state">
+                <figcaption
+                  class="figure-caption text-center"
+                  id="current_state_caption"
+                >
+                  <strong>Current State</strong>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <h3 class="title text-center" style="margin-top: 20px">
+          Explore H-ARC
+        </h3>
+        <p class="text-center description">
+          Explore participant responses, natural language
+          descriptions, errors and state space graphs for tasks from
+          the training and evaluation sets.
+        </p>
+        <div class="row justify-content-md-center text-center">
+          <div class="col-auto lg-4">
+            <!-- <h4>Training Set</h4> -->
+            <a href="training.html" class="btn btn-dark"
+              >Go to Training Set</a
+            >
+          </div>
+          <div class="col-auto lg-4" style="margin-bottom: 10px">
+            <!-- <h4>Evaluation Set</h4> -->
+            <a href="evaluation.html" class="btn btn-dark"
+              >Go to Evaluation Set</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="row justify-content-md-center"
+        style="
+          background-color: rgb(245, 245, 245);
+          padding: 10px;
+          margin-top: 20px;
+        "
+      >
+        <div class="col-lg-9">
+          <h4 class="text-center" style="margin-top: 20px">
+            Abstract
+          </h4>
+          <p class="text-justify" style="margin-bottom: 30px">
+            The Abstraction and Reasoning Corpus (ARC) is a visual
+            program synthesis benchmark designed to test challenging
+            out-of-distribution generalization in humans and machines.
+            Since 2019, limited progress has been observed on the
+            challenge using existing artificial intelligence methods.
+            Comparing human and machine performance is important for
+            the validity of the benchmark. While previous work
+            explored how well humans can solve tasks from the ARC
+            benchmark, they either did so using only a subset of tasks
+            from the original dataset, or from variants of ARC, and
+            therefore only provided a tentative estimate of human
+            performance. In this work, we obtain a more robust
+            estimate of human performance by evaluating 1729 humans on
+            the full set of 400 training and 400 evaluation tasks from
+            the original ARC problem set. We estimate that average
+            human performance lies between 73.3% and 77.2% correct
+            with a reported empirical average of 76.2% on the training
+            set, and between 55.9% and 68.9% correct with a reported
+            empirical average of 64.2% on the public evaluation set.
+            However, we also find that 790 out of the 800 tasks were
+            solvable by at least one person in three attempts,
+            suggesting that the vast majority of the publicly
+            available ARC tasks are in principle solvable by typical
+            crowd-workers recruited over the internet. Notably, while
+            these numbers are slightly lower than earlier estimates,
+            human performance still greatly exceeds current
+            state-of-the-art approaches for solving ARC. To facilitate
+            research on ARC, we publicly release our dataset, called
+            H-ARC (human-ARC), which includes all of the submissions
+            and action traces from human participants.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="row" style="margin-top: 20px; margin-bottom: 20px">
+        <div class="col-8">
+          <h3 class="title" style="margin-bottom: 20px">
+            Previous work
+          </h3>
           <a
             href="about.html"
-            class="btn btn-primary"
-            style="margin-top: 5%"
-            >Go to About</a
-          >
-        </div>
-        <div class="col-4">
-          <h4>Training Set</h4>
-          <p>
-            Explore participant responses to the ARC training tasks.
-          </p>
-          <a
-            href="training.html"
-            class="btn btn-primary"
-            style="margin-top: 5%"
-            >Go to Training Set</a
-          >
-        </div>
-        <div class="col-4">
-          <h4>Evaluation Set</h4>
-          <p>
-            Explore participant responses to the ARC evaluation tasks.
-          </p>
-          <a
-            href="evaluation.html"
-            class="btn btn-primary"
-            style="margin-top: 5%"
-            >Go to Evaluation Set</a
+            class="btn btn-outline-dark"
+            style="font-size: 1.25em"
+            >Fast and flexible: Human program induction in abstract
+            reasoning tasks</a
           >
         </div>
       </div>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -119,7 +385,7 @@
     <script src="js/plugins/sigma.layout.forceAtlas2/supervisor.js"></script>
     <script src="js/plugins/sigma.parsers.json/sigma.parsers.json.js"></script>
     <script>
-      var task_name = 'e345f17b';
+      var task_name = 'e3497940';
     </script>
     <script src="js/graph.js"></script>
   </body>
