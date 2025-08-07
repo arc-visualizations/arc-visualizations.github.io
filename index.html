@@ -49,8 +49,8 @@
       <div class="row">
         <div class="col-md">
           <h1 class="title is-1 text-center">
-            H-ARC: A Robust Estimate of Human Performance on the
-            Abstraction and Reasoning Corpus Benchmark
+            H-ARC: A Comprehensive Behavioral Dataset for the
+            Abstraction and Reasoning Corpus
           </h1>
         </div>
       </div>
@@ -73,7 +73,7 @@
       >
         <div class="col-auto lg-2">
           <a
-            href="papers/legrisetal-2024-arxiv.pdf"
+            href="https://www.nature.com/articles/s41597-025-05687-1"
             class="badge badge-pill badge-dark"
             style="padding: 0.75em 1.5em; font-size: 0.85em"
           >
@@ -83,19 +83,19 @@
                 src="img/icons/regular-file-pdf.svg"
               />
             </span>
-            Paper
+            Publication
           </a>
         </div>
         <div class="col-auto lg-2">
           <a
-            href="https://arxiv.org/abs/2409.01374"
+            href="https://osf.io/bh8yq"
             class="badge badge-pill badge-dark"
             style="padding: 0.75em 1.5em; font-size: 0.85em"
           >
             <span>
-              <img class="icon" src="img/icons/arxiv-logo.svg" />
+              <img class="icon" src="img/icons/dataset.svg" />
             </span>
-            arXiv
+            Dataset
           </a>
         </div>
         <div class="col-auto lg-2">
@@ -107,7 +107,7 @@
             <span>
               <img class="icon" src="img/icons/github-alt.svg" />
             </span>
-            Dataset
+            Github
           </a>
         </div>
       </div>
@@ -314,35 +314,26 @@
           </h4>
           <p class="text-justify" style="margin-bottom: 30px">
             The Abstraction and Reasoning Corpus (ARC) is a visual
-            program synthesis benchmark designed to test challenging
-            out-of-distribution generalization in humans and machines.
-            Since 2019, limited progress has been observed on the
-            challenge using existing artificial intelligence methods.
-            Comparing human and machine performance is important for
-            the validity of the benchmark. While previous work
-            explored how well humans can solve tasks from the ARC
-            benchmark, they either did so using only a subset of tasks
-            from the original dataset, or from variants of ARC, and
-            therefore only provided a tentative estimate of human
-            performance. In this work, we obtain a more robust
-            estimate of human performance by evaluating 1729 humans on
-            the full set of 400 training and 400 evaluation tasks from
-            the original ARC problem set. We estimate that average
-            human performance lies between 73.3% and 77.2% correct
-            with a reported empirical average of 76.2% on the training
-            set, and between 55.9% and 68.9% correct with a reported
-            empirical average of 64.2% on the public evaluation set.
-            However, we also find that 790 out of the 800 tasks were
-            solvable by at least one person in three attempts,
-            suggesting that the vast majority of the publicly
-            available ARC tasks are in principle solvable by typical
-            crowd-workers recruited over the internet. Notably, while
-            these numbers are slightly lower than earlier estimates,
-            human performance still greatly exceeds current
-            state-of-the-art approaches for solving ARC. To facilitate
-            research on ARC, we publicly release our dataset, called
-            H-ARC (human-ARC), which includes all of the submissions
-            and action traces from human participants.
+            program synthesis benchmark designed to test
+            out-of-distribution generalization in machines. Comparing
+            AI algorithms to human performance is essential to measure
+            progress on these problems. In this paper, we present
+            H-ARC (Human-ARC): a novel large-scale dataset containing
+            solution attempts from over 1700 humans on ARC problems.
+            The dataset spans the full set of 400 training and 400
+            evaluation tasks from the original ARC benchmark, and it
+            is the largest human evaluation to date. By publishing the
+            dataset, we contribute human responses to each problem,
+            step-by-step behavioral action traces from the ARC
+            user-interface, and natural-language solution descriptions
+            of the inferred program/rule. We believe this dataset will
+            be of value to researchers, both in cognitive science and
+            AI, since it offers the potential to facilitate the
+            discovery of underlying mechanisms supporting abstraction
+            and reasoning in people. The insights to be gained from
+            these data not only have value for cognitive science, but
+            could in turn inform the design of more efficient,
+            human-like AI algorithms.
           </p>
         </div>
       </div>
